@@ -3,7 +3,7 @@ let isLastPage = false;
 
 async function fetchNotices(page = 1) {
     try {
-        const response = await fetch(`${window.location.origin}/tip.json`);
+        const response = await fetch('/static/tip.json');
         const dbNotices = await response.json();
 
         if (dbNotices.length === 0) {
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentPage = 1;
                 fetchNotices(currentPage);
             } else if (page === 'last') {
-                fetch('/tip.json')
+                fetch('/static/tip.json')
                     .then(response => response.json())
                     .then(dbNotices => {
                         const normal = dbNotices.filter(n => !n.is_fixed);
