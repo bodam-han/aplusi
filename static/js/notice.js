@@ -3,7 +3,7 @@ let isLastPage = false;
 
 async function fetchNotices(page = 1) {
     try {
-        const response = await fetch('/notices.json');
+        const response = await fetch('/static/notice.json');
         const dbNotices = await response.json();
 
         if (dbNotices.length === 0 || page > 1) {
