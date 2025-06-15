@@ -1,6 +1,11 @@
 // 헤더와 푸터를 외부 HTML 파일에서 불러오는 스크립트
 window.addEventListener("DOMContentLoaded", () => {
-  const basePath = location.pathname.startsWith("/static/") ? "/static/" : "static/";
+  let basePath = "static/";
+  if (location.pathname.includes("/static/")) {
+    basePath = "/static/";
+  } else if (location.pathname.includes("/tip_") || location.pathname.includes("/fixed_notice_")) {
+    basePath = "../static/";
+  }
   fetch(`${basePath}header.html`)
     .then((res) => res.text())
     .then((data) => {
