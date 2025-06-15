@@ -115,10 +115,20 @@ def show_search():
 def notice():
     return render_template("notice.html")
 
+
 # notice_1.html route
 @app.route("/notice_1")
 def notice_1():
     return render_template("fixed_notice_1.html")
+
+# 추가: /project 및 /tip 라우트
+@app.route("/project")
+def project():
+    return render_template("project.html")
+
+@app.route("/tip")
+def tip():
+    return render_template("tip.html")
 
 
 # CORS headers for all responses
