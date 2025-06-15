@@ -12,8 +12,8 @@ async function fetchNotices(page = 1) {
             return;
         }
 
-        const fixed = dbNotices.filter(n => n.is_fixed);
-        const normal = dbNotices.filter(n => !n.is_fixed);
+        const fixed = dbNotices.filter(tip => tip.is_fixed);
+        const normal = dbNotices.filter(tip => !tip.is_fixed);
 
         renderFixedNotices(fixed);
         renderNotices(normal);
@@ -28,18 +28,18 @@ function renderFixedNotices(fixedNotices) {
 
     container.innerHTML = ''; // 기존 내용 초기화
 
-    fixedNotices.forEach(notice => {
+    fixedNotices.forEach(tip => {
         const card = document.createElement('div');
         card.classList.add('notice-card');
         card.innerHTML = `
             <a href="./${tip.link}">
-                <img src="${notice.image}" alt="썸네일" class="notice-thumb">
+                <img src="${tip.image}" alt="썸네일" class="notice-thumb">
                 <div class="notice-info">
                     <h3 class="notice-title">
-                        ${notice.is_fixed ? '<span class="fixed-pin">📌</span>' : ''}
-                        ${notice.tip_title}
+                        ${tip.is_fixed ? '<span class="fixed-pin">📌</span>' : ''}
+                        ${tip.title}
                     </h3>
-                    <p class="notice-meta">작성일: ${notice.date} | 조회수: ${notice.views}</p>
+                    <p class="notice-meta">작성일: ${tip.date} | 조회수: ${tip.views}</p>
                 </div>
             </a>
         `;
@@ -77,7 +77,7 @@ function renderNotices(notices) {
     while (noticesToRender.length < totalToRender) {
         noticesToRender.push({
             tip_id: `empty-${noticesToRender.length}`,
-            tip_title: '등록된 꿀팁이 없습니다.',
+            title: '등록된 꿀팁이 없습니다.',
             date: '-',
             views: '-',
             link: '#',
@@ -87,34 +87,35 @@ function renderNotices(notices) {
         });
     }
 
-    noticesToRender.forEach(notice => {
+    noticesToRender.forEach(tip => {
         const card = document.createElement('div');
         card.classList.add('notice-card');
-        // placeholder면 클릭 시 안내
-        if (notice.is_placeholder) {
+
+        if (tip.is_placeholder) {
             card.innerHTML = `
                 <a href="#" class="placeholder-link">
-                    <img src="${notice.image}" alt="썸네일" class="notice-thumb">
+                    <img src="${tip.image}" alt="썸네일" class="notice-thumb">
                     <div class="notice-info">
-                        <h3 class="notice-title">${notice.tip_title}</h3>
-                        <p class="notice-meta">작성일: ${notice.date} | 조회수: ${notice.views}</p>
+                        <h3 class="notice-title">${tip.title}</h3>
+                        <p class="notice-meta">작성일: ${tip.date} | 조회수: ${tip.views}</p>
                     </div>
                 </a>
             `;
         } else {
             card.innerHTML = `
                 <a href="./${tip.link}">
-                    <img src="${notice.image}" alt="썸네일" class="notice-thumb">
+                    <img src="${tip.image}" alt="썸네일" class="notice-thumb">
                     <div class="notice-info">
                         <h3 class="notice-title">
-                            ${notice.is_fixed ? '<span class="fixed-pin">📌</span>' : ''}
-                            ${notice.tip_title}
+                            ${tip.is_fixed ? '<span class="fixed-pin">📌</span>' : ''}
+                            ${tip.title}
                         </h3>
-                        <p class="notice-meta">작성일: ${notice.date} | 조회수: ${notice.views}</p>
+                        <p class="notice-meta">작성일: ${tip.date} | 조회수: ${tip.views}</p>
                     </div>
                 </a>
             `;
         }
+
         container.appendChild(card);
     });
 
@@ -154,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch('/static/tip.json')
                     .then(response => response.json())
                     .then(dbNotices => {
-                        const normal = dbNotices.filter(n => !n.is_fixed);
+                        const normal = dbNotices.filter(tip => !tip.is_fixed);
                         const totalToRender = 5;
                         const lastPage = Math.ceil(normal.length / totalToRender);
                         currentPage = lastPage;
