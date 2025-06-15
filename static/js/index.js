@@ -1,5 +1,5 @@
 // Load header.html into the header-placeholder div
-fetch("templates/header.html")
+fetch("static/header.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("header-placeholder").innerHTML = data;
