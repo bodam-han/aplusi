@@ -5,7 +5,7 @@ function handleAISubmit(e) {
   const formData = new FormData(form);
   const data = Object.fromEntries(formData.entries());
 
-  fetch("http://127.0.0.1:5000/recommend", {
+  fetch("/recommend", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
