@@ -35,6 +35,8 @@ function renderFixedNotices() {
     const container = document.getElementById('notice-list');
     if (!container) return;
 
+    container.innerHTML = ''; // 기존 내용 초기화
+
     fixedNotices.forEach(notice => {
         const card = document.createElement('div');
         card.classList.add('notice-card');

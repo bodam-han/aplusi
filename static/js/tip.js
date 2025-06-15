@@ -1,15 +1,3 @@
-const fixedNotices = [
-    {
-        id: 'mail-guide',
-        title: '[대학생활 Tip] 교수님께 메일 잘 쓰는 법',
-        date: '2025-06-10',
-        views: '-',
-        link: 'tip_1.html',
-        is_fixed: true,
-        image: './static/tip_png/tip_1.png'
-    }
-];
-
 let currentPage = 1;
 let isLastPage = false;
 
@@ -24,16 +12,21 @@ async function fetchNotices(page = 1) {
             return;
         }
 
-        renderNotices(dbNotices);
+        const fixed = dbNotices.filter(n => n.is_fixed);
+        const normal = dbNotices.filter(n => !n.is_fixed);
+
+        renderFixedNotices(fixed);
+        renderNotices(normal);
     } catch (error) {
-        console.error('내용 불러오기 실패:', error);
+        console.error('대학생활 팁 불러오기 실패:', error);
     }
 }
 
-// 고정 공지 렌더링 (맨 위에 표시)
-function renderFixedNotices() {
+function renderFixedNotices(fixedNotices) {
     const container = document.getElementById('notice-list');
     if (!container) return;
+
+    container.innerHTML = ''; // 기존 내용 초기화
 
     fixedNotices.forEach(notice => {
         const card = document.createElement('div');
@@ -44,7 +37,7 @@ function renderFixedNotices() {
                 <div class="notice-info">
                     <h3 class="notice-title">
                         ${notice.is_fixed ? '<span class="fixed-pin">📌</span>' : ''}
-                        ${notice.title}
+                        ${notice.tip_title}
                     </h3>
                     <p class="notice-meta">작성일: ${notice.date} | 조회수: ${notice.views}</p>
                 </div>
@@ -59,8 +52,12 @@ function renderNotices(notices) {
     const container = document.getElementById('notice-list');
     if (!container) return;
 
+    container.innerHTML = '';  // Clear previous cards
+
     const totalToRender = 5;
-    const noticesToRender = [...notices];
+    const startIdx = (currentPage - 1) * totalToRender;
+    const endIdx = startIdx + totalToRender;
+    const noticesToRender = notices.slice(startIdx, endIdx);
 
     while (noticesToRender.length < totalToRender) {
         noticesToRender.push({
@@ -74,7 +71,7 @@ function renderNotices(notices) {
         });
     }
 
-    noticesToRender.slice(0, totalToRender).forEach(notice => {
+    noticesToRender.forEach(notice => {
         const card = document.createElement('div');
         card.classList.add('notice-card');
         card.innerHTML = `
@@ -95,7 +92,6 @@ function renderNotices(notices) {
 
 // 고정 공지를 먼저 렌더링하고, 일반 공지를 불러오는 방식
 document.addEventListener('DOMContentLoaded', () => {
-    renderFixedNotices();  // 먼저 고정 공지 렌더링
     fetchNotices();  // 첫 페이지 불러오기
 
     const loadMoreBtn = document.querySelector('#load-more-btn');
@@ -109,6 +105,35 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    document.querySelectorAll('.page-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const page = button.dataset.page;
+            if (page === 'first') {
+                currentPage = 1;
+                fetchNotices(currentPage);
+            } else if (page === 'last') {
+                fetch('/tip.json')
+                    .then(response => response.json())
+                    .then(dbNotices => {
+                        const normal = dbNotices.filter(n => !n.is_fixed);
+                        const totalToRender = 5;
+                        const lastPage = Math.ceil(normal.length / totalToRender);
+                        currentPage = lastPage;
+                        fetchNotices(lastPage);
+                    });
+            } else if (page === 'first') {
+                currentPage = 1;
+                fetchNotices(1);
+            } else {
+                const numericPage = parseInt(page);
+                if (!isNaN(numericPage)) {
+                    currentPage = numericPage;
+                    fetchNotices(numericPage);
+                }
+            }
+        });
+    });
 });
 
 async function checkAdmin() {
