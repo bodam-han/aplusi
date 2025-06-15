@@ -113,14 +113,16 @@ def aisearch():
 
 @app.route("/notice")
 def notice():
-    return render_template("notice.html")
+    return render_template("notice.html", fixed_notice_link="fixed_notice_1.html")
 
 
 # notice_1.html route
 @app.route("/notice_1")
 def notice_1():
     return render_template("fixed_notice_1.html")
-
+@app.route("/fixed_notice_1")
+def fixed_notice_1():
+    return render_template("fixed_notice_1.html")
 # 추가: /project 및 /tip 라우트
 @app.route("/project")
 def project():
