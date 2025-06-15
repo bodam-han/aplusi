@@ -6,9 +6,9 @@ window.addEventListener("DOMContentLoaded", () => {
       document.getElementById("header-placeholder").innerHTML = data;
 
       // Update logo link
-      const logoLink = document.querySelector("#header-placeholder a[href='/search']");
+      const logoLink = document.querySelector("#header-placeholder a[href='/']");
       if (logoLink) {
-        logoLink.setAttribute("href", "/aisearch.html");
+        logoLink.setAttribute("href", "/");
       }
 
       const toggleBtn = document.querySelector('.navbar_toggleBtn');
