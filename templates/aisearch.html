@@ -15,7 +15,7 @@
     <div id="header-placeholder"></div>
     <h1 class="page-header">Ai 찾기</h1>
     <div class="ai-form-wrapper">
-      <form id="ai-form">
+      <form id="ai-form" onsubmit="handleAISubmit(event)">
       <label>사용 목적:
         <select name="purpose" required>
           <option value="텍스트">텍스트</option>

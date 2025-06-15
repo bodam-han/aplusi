@@ -1,10 +1,11 @@
-document.getElementById("ai-form").addEventListener("submit", function (e) {
+function handleAISubmit(e) {
   e.preventDefault();
 
-  const formData = new FormData(this);
+  const form = document.getElementById("ai-form");
+  const formData = new FormData(form);
   const data = Object.fromEntries(formData.entries());
 
-   fetch("http://127.0.0.1:5000/recommend", {
+  fetch("http://127.0.0.1:5000/recommend", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
@@ -56,4 +57,6 @@ document.getElementById("ai-form").addEventListener("submit", function (e) {
       });
     })
     .catch((err) => console.error("에러:", err));
-});
+}
+
+window.handleAISubmit = handleAISubmit;
