@@ -1,0 +1,333 @@
+@import url(./media_query.css);
+.page-header {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #6e1e1e;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 80px auto 30px auto; /* Increase top margin */
+  padding: 60px 0;
+  background-color: #ffecec;
+  border-bottom: 2px solid #e0a0a0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#page-header h1 {
+  display: block;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #732d2d;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+  background-color: #ffffff;
+  padding: 8px 24px;
+  border-radius: 12px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Center-align all section headings like 자료조사, 논문/학술 자료 찾기, 국내 자료, 해외 자료 */
+* {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Ensure horizontal centering for button wrapper groups */
+.tool-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.tool-category,
+.tool-grid {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.tool-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+ .task-button rule to ensure compact, inline, row-wrapping layout
+.task-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  text-align: center;
+  background-color: transparent;
+  transition: transform 0.2s ease;
+  box-sizing: border-box;
+}
+
+.task-button a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.tool-card {
+  width: 280px;
+  max-width: 100%;
+  height: 360px;
+  box-sizing: border-box;
+  padding:10px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/* Ensure all logos have a consistent size */
+.tool-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+/* Make site name bold and larger */
+.tool-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 4px 0;
+}
+
+/* Style the '바로가기' button with red background */
+.tool-button {
+  background-color: #e57070;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 12px;
+  display: inline-block;
+}
+.tool-card.service-ready {
+  width: 500px;
+  height: auto;
+  padding: 24px;
+}
+
+  .tool-card.service-ready img {
+    max-width: 50%;
+    height: auto;
+  }
+
+.tool-card.service-ready p {
+  margin: 0;
+  padding: 12px;
+  font-size: 1rem;
+}
+section.research {
+  background-color: #f8dcdc; /* slightly darker than page, lighter than button */
+  padding: 40px 24px;
+  border-radius: 16px;
+  margin-bottom: 48px;
+  width: 700px;
+}
+
+section.ppt,
+section.video,
+section.report,
+section.stat {
+  background-color: #f8dcdc;
+  padding: 40px 24px;
+  border-radius: 16px;
+  margin-bottom: 48px;
+  width: 700px;
+}
+
+section.middle-section{
+background-color: #e4c8c8;
+  padding: 40px 24px;
+  border-radius: 16px;
+  box-shadow:1px;
+  border-color: #432121;
+  margin-bottom: 48px;
+  width: 700px;
+  height:200px;
+
+}
+
+section.research h2,
+section.ppt h2,
+section.video h2,
+section.report h2,
+section.stat h2 {
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 12px;
+  font-size: 2.0rem;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 480px) {
+   .page-header {
+        font-size: 24px; /* 제목 크기 축소 */
+        padding: 15px 0;
+    }
+}
+@media screen and (max-width: 1024px) {
+  section.research,
+  section.ppt,
+  section.video,
+  section.report,
+  section.stat,
+  section.middle-section {
+    width: 90%;
+    padding: 24px 16px;
+  }
+
+  .tool-card {
+    width: 48%;
+    min-width: 240px;
+    height: auto;
+  }
+
+  .tool-card.service-ready {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .tool-card.service-ready img {
+    max-width: 40%;
+    height: auto;
+  }
+
+  .tool-card.service-ready p {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .tool-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .tool-name {
+    font-size: 1rem;
+  }
+
+  .tool-button {
+    font-size: 0.95rem;
+    padding: 6px 12px;
+  }
+
+  section.research h2,
+  section.ppt h2,
+  section.video h2,
+  section.report h2,
+  section.stat h2 {
+    font-size: 1.5rem;
+    padding: 6px 16px;
+  }
+
+  #page-header h1 {
+    font-size: 1.6rem;
+  }
+
+
+  section.middle-section {
+    height: auto;
+    min-height: 200px;
+  }
+
+  .task-button {
+    width: 90px;
+    font-size: 0.8rem;
+  }
+
+  .task-button img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 4px;
+  }
+
+  .task-button p {
+    margin: 0;
+  }
+
+  .dual-category-wrapper .tool-category {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .tool-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .tool-category {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-img {
+    width: 80px !important;
+    height: auto;
+  }
+  .tool-card {
+    width: 46%;
+    min-width: unset;
+    max-width: 100%;
+  }
+  .tool-logo {
+    width: 60px;
+    height: 60px;
+  }
+  .tool-name {
+    font-size: 0.9rem;
+  }
+  .tool-button {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+  .task-button img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+  }
+  .task-button p {
+    margin: 0;
+    font-size: 0.75rem;
+  }
+}

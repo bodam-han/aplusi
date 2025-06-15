@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에이쁠아이</title>
+    <link rel="icon" href="index_png/aiplus_logo_header.png" type="image/png" />
+    <!-- CSS 파일을 링크 -->
+    <link rel="stylesheet" href="index.css" />
+      <!-- CSS 파일을 링크 -->
+    <link rel="stylesheet" href="header_footer.css" />
+
+    <!-- 헤더와 푸터 스타일 -->
+    <!-- 스타일 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 이 부분은 검색엔진(네이버·구글 등)에서 내 사이트가 검색되게 하고, 내 사이트임을 증명할 때 필요한 메타 태그를 넣는 곳입니다 -->
+   <meta name="naver-site-verification" content="6ed923ec32b24f16802d1be36842d149dedce3d5" />
+    <!-- <meta name="google-site-verification" content="발급코드" /> -->
+  </head>
+  <body>
+    <!-- 동적 헤더 연결 -->
+    <div id="header-placeholder"></div>
+
+
+    <!-- 추천ai로 넘어가는 버튼 섹션 -->
+    <section class="search-aisection">
+      <div class="search-container">
+        <br>
+        <br>
+        <img class="search-img" src="index_png/study.png" width="30%">
+
+        <h2 class="search-text">AI 시대 똑똑하게 과제하자</h2>
+        <button class="search-icon" id="search-button" aria-label="Search">
+          지금 내가 필요한 ai는? ▶︎
+        </button>
+      </div>
+    </section>
+
+    <!-- 도움말 슬라이드(이용 가이드 및 꿀팁) 섹션 -->
+    <div class="slide-box">
+    <section class="slideshow-container">
+      <div class="sort-button-container">
+        <button class="sort-button">도움말 및 공지사항</button>
+      </div>
+      <br>
+      <div class="mySlides mySlides-help fade" id="help-slide-1">
+        <div class="slide-content">
+          <img src="index_png/aiplus_guide.png" alt="Slide 1" class="banner-img" />
+        
+          <div class="banner-text">
+            <h2>에이쁠아이<br>이용Tip</h2>
+            <h3>과제 유형별? ai찾기?</h3>
+            <a href="fixed_notice_1.html">
+              <button>자세히 알아보기</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides mySlides-help fade" id="help-slide-2">
+        <div class="slide-content">
+          <img src="index_png/professor_mail.png" alt="Slide 2" class="banner-img" />
+          <div class="banner-text">
+            <h2>교수님께 메일 잘 쓰는 법?<br> 이렇게 써보세요!</h2>
+            <a href="fixed_notice_1.html">
+              <button>자세히 알아보기</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides mySlides-help fade" id="help-slide-3">
+        <div class="slide-content">
+          <img src="index_png/tip_googleform.png" alt="Slide 3" class="banner-img" />
+          <div class="banner-text">
+            <h2>여러분의 대학생활 꿀팁을<br>알려주세요! <br></h2>
+            <h3> x월 xx일 ~ x월 xx일</h3>
+              <a href="fixed_notice_1.html">
+              <button>자세히 알아보기</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 네비게이션 버튼 (작은 동그라미) - 도움말 슬라이드용 -->
+      <div class="dot-container help">
+        <span class="dot-help"></span>
+        <span class="dot-help"></span>
+        <span class="dot-help"></span>
+      </div>
+
+    </section>
+    </div>
+
+    <!-- BEST AI 슬라이드쇼 섹션 -->
+    <div class="slide-box">
+    <section class="slideshow-container">
+      <div class="sort-button-container">
+        <button class="sort-button">인기 Ai</button>
+      </div>
+      <br>
+      <div class="mySlides mySlides-best fade" id="best-slide-1">
+        <div class="slide-content">
+          <img src="index_png/chat GPT_icon.png" alt="Slide 1" class="banner-img" />
+          <div class="banner-text">
+            <h2>ChatGPT (OpenAI)</h2>
+            <h3>다용도 대화</h3>
+            <h3>대화, 글쓰기, 요약, 번역, 코딩,<br>이미지 생성 (DALL·E), 음성 대화 지원</h3>
+            <a href="https://chatgpt.com">
+              <button>바로가기</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides mySlides-best fade" id="best-slide-2">
+  <div class="slide-content">
+    <img src="index_png/Google_Gemini_icon.png" alt="Slide 2" class="banner-img" />
+    <div class="banner-text">
+      <h2>Google Gemini</h2>
+      <h3>구글 연동</h3>
+      <h3>Gmail, Docs 등과 연동되는<br>Google AI 도우미</h3>
+      <a href="https://gemini.google.com">
+        <button>바로가기</button>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="mySlides mySlides-best fade" id="best-slide-3">
+  <div class="slide-content">
+    <img src="index_png/perplexity_icon.png" alt="Slide 3" class="banner-img" />
+    <div class="banner-text">
+      <h2>Perplexity AI</h2>
+      <h3>실시간 검색</h3>
+      <h3>최신 정보 검색과 정확한 출처 제공</h3>
+      <a href="https://www.perplexity.ai">
+        <button>바로가기</button>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="mySlides mySlides-best fade" id="best-slide-4">
+  <div class="slide-content">
+    <img src="index_png/claude_icon.png" alt="Slide 4" class="banner-img" />
+    <div class="banner-text">
+      <h2>Claude (Anthropic)</h2>
+      <h3>긴 문맥 이해</h3>
+      <h3>문서 요약, 이미지 분석 등에서<br>자연스러운 대화</h3>
+      <a href="https://claude.ai">
+        <button>바로가기</button>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="mySlides mySlides-best fade" id="best-slide-5">
+  <div class="slide-content">
+    <img src="index_png/Microsoft_Copilot_icon.png" alt="Slide 5" class="banner-img" />
+    <div class="banner-text">
+      <h2>Microsoft Copilot</h2>
+      <h3>오피스 자동화</h3>
+      <h3>Word, Excel 등에서<br>문서 작성과 분석을 자동화</h3>
+      <a href="https://copilot.microsoft.com">
+        <button>바로가기</button>
+      </a>
+    </div>
+  </div>
+</div>
+      <!-- 네비게이션 버튼 (작은 동그라미) -->
+      <div class="dot-container best">
+        <span class="dot-best"></span>
+        <span class="dot-best"></span>
+        <span class="dot-best"></span>
+        <span class="dot-best"></span>
+        <span class="dot-best"></span>
+      </div>
+    </section>
+    </div>
+
+    <!-- 동적 푸터 연결 -->
+    <div id="footer-placeholder"></div>
+
+    <!-- 스크립트 -->
+    <script src="header_footer.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="index.js" defer></script>
+  </body>
+</html>

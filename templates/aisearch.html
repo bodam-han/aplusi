@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>에이쁠아이►공지사항</title>
+  <link rel="icon" href="/static/index_png/aiplus_logo_header.png" type="image/png" />
+  <!-- CSS 파일을 링크 -->
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="header_footer.css" />
+  <!-- CSS 파일을 링크 -->
+  <link rel="stylesheet" href="aisearch.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+    <h1 class="page-header">Ai 찾기</h1>
+    <div class="ai-form-wrapper">
+      <form id="ai-form">
+      <label>사용 목적:
+        <select name="purpose" required>
+          <option value="텍스트">텍스트</option>
+          <option value="음악">음악</option>
+          <option value="이미지">이미지</option>
+          <option value="음성">음성</option>
+        </select>
+      </label>
+      <br />
+
+      <label>실력 수준:
+        <select name="difficulty" required>
+          <option value="0">초보자</option>
+          <option value="1">중급자</option>
+          <option value="2">전문가</option>
+        </select>
+      </label>
+      <br />
+
+      <label>품질 중시 여부:
+        <select name="quality" required>
+          <option value="0">중시 안함</option>
+          <option value="1">보통</option>
+          <option value="2">좋음</option>
+          <option value="3">매우 좋음</option>
+        </select>
+      </label>
+      <br />
+
+      <label>개인화 여부:
+        <select name="customization" required>
+          <option value="0">불필요</option>
+          <option value="1">보통</option>
+          <option value="2">중요</option>
+          <option value="3">매우 중요</option>
+        </select>
+      </label>
+      <br />
+
+      <label>사용자 유형:
+        <select name="target_user" required>
+          <option value="초보자">초보자</option>
+          <option value="학생">학생</option>
+          <option value="연구자">연구자</option>
+          <option value="업무 사용자">업무 사용자</option>
+          <option value="콘텐츠 전문가">콘텐츠 전문가</option>
+        </select>
+      </label>
+      <br /><br />
+      <button type="submit">추천받기</button>
+    </form>
+  </div>
+
+  <div class="ai-recommend-wrapper">
+    <p id="placeholder-text" style="color: gray; font-size: 16px; text-align: center; margin-bottom: 20px;">추천 받기를 눌러보세요!</p>
+    <button id="result-header" style="display:none; background-color:#ffecec; border:none; font-weight:700; font-size:18px; color:#333; margin-bottom:20px;"></button>
+    <div id="recommendResult" class="card-container" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+      <div class="ai-card" id="card-1" style="display: none;">
+        <img id="image-1" class="tool-image" src="" alt="Tool Image" style="width: 100px; height: 100px; margin: 0 auto;" />
+        <h3 id="tool-name-1">이름 없음</h3>
+        <p id="similarity-1">유사도: 0.00</p>
+        <a id="link-1" class="go-btn" href="#">바로가기</a>
+      </div>
+      <div class="ai-card" id="card-2" style="display: none;">
+        <img id="image-2" class="tool-image" src="" alt="Tool Image" style="width: 100px; height: 100px; margin: 0 auto;" />
+        <h3 id="tool-name-2">이름 없음</h3>
+        <p id="similarity-2">유사도: 0.00</p>
+        <a id="link-2" class="go-btn" href="#">바로가기</a>
+      </div>
+      <div class="ai-card" id="card-3" style="display: none;">
+        <img id="image-3" class="tool-image" src="" alt="Tool Image" style="width: 100px; height: 100px; margin: 0 auto;" />
+        <h3 id="tool-name-3">이름 없음</h3>
+        <p id="similarity-3">유사도: 0.00</p>
+        <a id="link-3" class="go-btn" href="#">바로가기</a>
+      </div>
+    </div>
+  </div>
+
+ <div id="footer-placeholder"></div>
+    <!-- JavaScript 파일 링크 -->
+    <script src="header_footer.js"></script>
+    <script src="notice.js"></script>
+    <script src="aisearch.js"></script>
+</body>
+</html>

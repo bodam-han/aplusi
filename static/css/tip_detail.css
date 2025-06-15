@@ -1,0 +1,492 @@
+.page-header {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #6e1e1e;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 80px auto 30px auto; /* Increase top margin */
+  padding: 60px 0;
+  background-color: #ffecec;
+  border-bottom: 2px solid #e0a0a0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px !important; 
+    margin-bottom: 0px;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+/* 반응형 처리 - 태블릿 이하 */
+
+/* 기존 스타일 유지 + 추가 및 수정 */
+
+.page-header {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #6e1e1e;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 80px auto 30px auto; /* Increase top margin */
+  padding: 60px 0;
+  background-color: #ffecec;
+  border-bottom: 2px solid #e0a0a0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.notice-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+    flex-wrap: wrap; /* 반응형 추가 */
+}
+
+.search-filter, .search-input, .search-btn {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.page-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background-color: #eee;
+    color: #333;
+    font-weight: bold;
+    margin: 0 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.page-btn.active {
+    font-weight: bold;
+    background-color: #962a2a;  /* 진한 붉은색으로 변경 */
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+/* 글쓰기 버튼 붉은색 계열로 변경 */
+.write-btn {
+    padding: 10px 20px;
+    background-color: #c96a6a; /* 밝은 붉은색 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    float: right;
+    transition: all 0.3s ease;
+}
+
+.write-btn:hover {
+    background-color: #953f3f; /* 더 진한 붉은색 */
+    transform: translateY(-2px);
+}
+
+.write-btn:active {
+    background-color: #a13c3c;
+    transform: translateY(0);
+}
+
+.write-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.write-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.write-container input, .write-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.write-container button {
+    padding: 10px 20px;
+    background-color: #8f4343; /* 붉은색 버튼 */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.write-container button:hover {
+    background-color: #b04d4d; /* 강조된 붉은색 */
+}
+
+/* 반응형 처리 */
+@media (max-width: 1024px) {
+    .notice-container {
+        width: 95%;
+    }
+
+    .write-btn {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-area {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-input, .search-btn, .search-filter {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 768px) {
+    .notice-table th, .notice-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .page-btn {
+        padding: 4px 8px;
+    }
+
+    .write-btn {
+        padding: 12px;
+    }
+
+    .write-container {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  .page-header {
+    font-size: 28px;
+    padding: 60px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-header {
+    font-size: 24px;
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-header {
+    font-size: 20px;
+    padding: 40px 0;
+  }
+}
+
+    .notice-container {
+        width: 100%;
+        padding: 0 10px;
+        margin: 30px auto;
+    }
+
+    .search-area {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .search-filter, .search-input, .search-btn {
+        width: 100%;
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .notice-table {
+        font-size: 12px;
+    }
+
+    .notice-table th, .notice-table td {
+        padding: 6px;
+        word-break: break-word;
+    }
+
+    .write-btn {
+        width: 100%; /* 버튼 전체 너비 */
+        padding: 12px 0;
+        font-size: 14px;
+        float: none;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .page-btn {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .write-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .write-container input, .write-container textarea {
+        padding: 8px;
+    }
+
+    .write-container button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+
+.notice-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.notice-card {
+  width: 240px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  background-color: #fff;
+  text-align: left;
+}
+
+.notice-card:hover {
+  transform: translateY(-4px);
+}
+
+.notice-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.notice-thumb {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+.notice-info {
+  padding: 16px;
+}
+
+.notice-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.notice-meta {
+  font-size: 12px;
+  color: #888;
+}
+@media (max-width: 768px) {
+    .notice-detail-container {
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .notice-title {
+        font-size: 22px;
+    }
+
+    .notice-content {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .btn-back {
+        width: 100%; /* 모바일에서 버튼 전체 너비 */
+        padding: 14px;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.btn-delete {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #ff4d4f;  /* 빨간색 */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #d9363e;
+}
+
+
+/* 더 작은 모바일 기기 대응 */
+@media (max-width: 480px) {
+    .page-header {
+    font-size: 20px;
+    padding: 40px 0;
+  }
+
+    .notice-title {
+        font-size: 20px;
+    }
+
+    .notice-meta {
+        font-size: 12px;
+    }
+
+    .btn-back {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1024px) {
+  .page-header {
+    font-size: 28px;
+    padding: 60px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-header {
+    font-size: 24px;
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-header {
+    font-size: 20px;
+    padding: 40px 0;
+  }
+}
+.notice-detail-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 50px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+    box-sizing: border-box;
+}
+
+.notice-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #983636;
+    border-left: 5px solid #fbc2eb;
+    padding-left: 12px;
+}
+
+.notice-meta {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.notice-content {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #444;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+.notice-content h2 {
+    font-size: 20px;
+    margin-top: 32px;
+    color: #b14d4d;
+    border-bottom: 2px solid #fbc2c2;
+    padding-bottom: 6px;
+}
+.notice-content ul, .notice-content ol {
+    padding-left: 20px;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: #f67280;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(246, 114, 128, 0.4);
+    margin-top: 40px;
+}
+
+.btn-back:hover {
+    background-color: #e65b6f;
+    transform: translateY(-2px);
+}
+
+.btn-edit {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #c46969;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.btn-edit:hover {
+    background-color: #5c4db1;
+}
+

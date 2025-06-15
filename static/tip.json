@@ -1,0 +1,20 @@
+[
+  {
+    "tip_id": "T002",
+    "tip_title": "[대학생활 Tip]  필기정리 꿀팁: 굿노트 활용법",
+    "date": "2025-06-10",
+    "views": "-",
+    "link": "tip_2.html",
+    "is_fixed": false,
+    "image": "tip_png/tip_2.png"
+  },
+  {
+    "tip_id": "T003",
+    "tip_title": "[대학생활 Tip] AI 필기 도우미: 클로바노트 완전 활용법",
+    "date": "2025-06-10",
+    "views": "-",
+    "link": "tip_3.html",
+    "is_fixed": false,
+    "image": "tip_png/tip_3.png"
+  }
+]

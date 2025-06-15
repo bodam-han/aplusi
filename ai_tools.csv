@@ -1,0 +1,316 @@
+tool_name,category,difficulty,quality,customization,target_user,url,image_url
+Eleven Labs,음성,2,3,2,업무 사용자,https://elevenlabs.io/,eleven_labs.png
+Eleven Labs,음성,2,3,0,연구자,https://elevenlabs.io/,eleven_labs.png
+Eleven Labs,음성,3,3,2,학생,https://elevenlabs.io/,eleven_labs.png
+Eleven Labs,음성,1,1,0,마케터,https://elevenlabs.io/,eleven_labs.png
+Eleven Labs,음성,0,1,0,초보자,https://elevenlabs.io/,eleven_labs.png
+Eleven Labs,음성,2,3,2,콘텐츠 전문가,https://elevenlabs.io/,eleven_labs.png
+Eleven Labs,음성,3,3,3,디자이너,https://elevenlabs.io/,eleven_labs.png
+Eleven Labs,음성,2,3,2,일상 사용자,https://elevenlabs.io/,eleven_labs.png
+Eleven Labs,음성,3,3,3,연구자,https://elevenlabs.io/,eleven_labs.png
+Eleven Labs,음성,2,3,2,업무 사용자,https://elevenlabs.io/,eleven_labs.png
+Aiva,음악,1,2,1,학생,https://www.aiva.ai/,aiva.png
+Aiva,음악,1,2,0,업무 사용자,https://www.aiva.ai/,aiva.png
+Aiva,음악,3,3,3,연구자,https://www.aiva.ai/,aiva.png
+Aiva,음악,3,3,2,마케터,https://www.aiva.ai/,aiva.png
+Aiva,음악,0,1,0,초보자,https://www.aiva.ai/,aiva.png
+Aiva,음악,1,2,1,콘텐츠 전문가,https://www.aiva.ai/,aiva.png
+Aiva,음악,3,3,3,디자이너,https://www.aiva.ai/,aiva.png
+Aiva,음악,1,2,0,일상 사용자,https://www.aiva.ai/,aiva.png
+Aiva,음악,3,3,3,연구자,https://www.aiva.ai/,aiva.png
+Aiva,음악,1,2,1,학생,https://www.aiva.ai/,aiva.png
+Aiva,음악,3,3,3,연구자,https://www.aiva.ai/,aiva.png
+Aiva,음악,3,3,2,학생,https://www.aiva.ai/,aiva.png
+Aiva,음악,2,3,3,마케터,https://www.aiva.ai/,aiva.png
+Aiva,음악,1,1,1,초보자,https://www.aiva.ai/,aiva.png
+Aiva,음악,3,3,3,콘텐츠 전문가,https://www.aiva.ai/,aiva.png
+Aiva,음악,3,3,2,디자이너,https://www.aiva.ai/,aiva.png
+Aiva,음악,2,3,3,업무 사용자,https://www.aiva.ai/,aiva.png
+Aiva,음악,3,3,3,일상 사용자,https://www.aiva.ai/,aiva.png
+Aiva,음악,3,3,3,연구자,https://www.aiva.ai/,aiva.png
+Aiva,음악,2,3,2,학생,https://www.aiva.ai/,aiva.png
+Beatoven,음악,0,1,0,일상 사용자,https://www.beatoven.ai/,beatoven.png
+Beatoven,음악,0,1,1,학생,https://www.beatoven.ai/,beatoven.png
+Beatoven,음악,1,2,0,업무 사용자,https://www.beatoven.ai/,beatoven.png
+Beatoven,음악,1,2,1,연구자,https://www.beatoven.ai/,beatoven.png
+Beatoven,음악,0,1,0,초보자,https://www.beatoven.ai/,beatoven.png
+Beatoven,음악,0,1,1,마케터,https://www.beatoven.ai/,beatoven.png
+Beatoven,음악,1,2,0,콘텐츠 전문가,https://www.beatoven.ai/,beatoven.png
+Beatoven,음악,1,2,1,디자이너,https://www.beatoven.ai/,beatoven.png
+Beatoven,음악,0,1,0,연구자,https://www.beatoven.ai/,beatoven.png
+Beatoven,음악,0,1,1,일상 사용자,https://www.beatoven.ai/,beatoven.png
+Loudly,음악,0,1,0,연구자,https://loudly.com/,loudly.png
+Loudly,음악,0,1,1,학생,https://loudly.com/,loudly.png
+Loudly,음악,1,2,0,마케터,https://loudly.com/,loudly.png
+Loudly,음악,1,1,0,초보자,https://loudly.com/,loudly.png
+Loudly,음악,0,1,0,콘텐츠 전문가,https://loudly.com/,loudly.png
+Loudly,음악,0,1,1,디자이너,https://loudly.com/,loudly.png
+Loudly,음악,1,2,1,업무 사용자,https://loudly.com/,loudly.png
+Loudly,음악,0,1,0,일상 사용자,https://loudly.com/,loudly.png
+Loudly,음악,0,1,0,연구자,https://loudly.com/,loudly.png
+Loudly,음악,1,2,1,학생,https://loudly.com/,loudly.png
+Mureka,음악,3,3,3,일상 사용자,https://www.mureka.ai/create,mureka.png
+Mureka,음악,2,3,2,연구자,https://www.mureka.ai/create,mureka.png
+Mureka,음악,3,3,2,마케터,https://www.mureka.ai/create,mureka.png
+Mureka,음악,1,1,0,초보자,https://www.mureka.ai/create,mureka.png
+Mureka,음악,3,3,3,업무 사용자,https://www.mureka.ai/create,mureka.png
+Mureka,음악,2,3,2,콘텐츠 전문가,https://www.mureka.ai/create,mureka.png
+Mureka,음악,3,3,3,디자이너,https://www.mureka.ai/create,mureka.png
+Mureka,음악,2,3,2,학생,https://www.mureka.ai/create,mureka.png
+Mureka,음악,3,3,3,연구자,https://www.mureka.ai/create,mureka.png
+Mureka,음악,2,3,2,일상 사용자,https://www.mureka.ai/create,mureka.png
+Mureka,음악,2,3,2,연구자,https://www.mureka.ai/create,mureka.png
+Mureka,음악,3,3,3,일상 사용자,https://www.mureka.ai/create,mureka.png
+Mureka,음악,2,3,0,마케터,https://www.mureka.ai/create,mureka.png
+Mureka,음악,0,1,0,초보자,https://www.mureka.ai/create,mureka.png
+Mureka,음악,2,3,2,콘텐츠 전문가,https://www.mureka.ai/create,mureka.png
+Mureka,음악,3,3,3,디자이너,https://www.mureka.ai/create,mureka.png
+Mureka,음악,2,3,2,학생,https://www.mureka.ai/create,mureka.png
+Mureka,음악,3,3,3,연구자,https://www.mureka.ai/create,mureka.png
+Mureka,음악,2,3,2,일상 사용자,https://www.mureka.ai/create,mureka.png
+Mureka,음악,3,3,3,업무 사용자,https://www.mureka.ai/create,mureka.png
+Riffusion,음악,3,3,3,일상 사용자,https://www.riffusion.com/,riffusion.png
+Riffusion,음악,2,3,2,연구자,https://www.riffusion.com/,riffusion.png
+Riffusion,음악,3,3,3,학생,https://www.riffusion.com/,riffusion.png
+Riffusion,음악,1,1,0,마케터,https://www.riffusion.com/,riffusion.png
+Riffusion,음악,0,1,0,초보자,https://www.riffusion.com/,riffusion.png
+Riffusion,음악,3,3,3,콘텐츠 전문가,https://www.riffusion.com/,riffusion.png
+Riffusion,음악,3,3,2,디자이너,https://www.riffusion.com/,riffusion.png
+Riffusion,음악,2,3,2,업무 사용자,https://www.riffusion.com/,riffusion.png
+Riffusion,음악,3,3,3,연구자,https://www.riffusion.com/,riffusion.png
+Riffusion,음악,2,3,2,일상 사용자,https://www.riffusion.com/,riffusion.png
+Soundraw,음악,0,1,0,일상 사용자,https://soundraw.io/,soundraw.png
+Soundraw,음악,1,2,1,연구자,https://soundraw.io/,soundraw.png
+Soundraw,음악,0,1,1,학생,https://soundraw.io/,soundraw.png
+Soundraw,음악,1,2,0,업무 사용자,https://soundraw.io/,soundraw.png
+Soundraw,음악,0,1,0,초보자,https://soundraw.io/,soundraw.png
+Soundraw,음악,1,2,1,마케터,https://soundraw.io/,soundraw.png
+Soundraw,음악,0,1,0,콘텐츠 전문가,https://soundraw.io/,soundraw.png
+Soundraw,음악,1,2,1,디자이너,https://soundraw.io/,soundraw.png
+Soundraw,음악,0,1,0,연구자,https://soundraw.io/,soundraw.png
+Soundraw,음악,1,2,1,일상 사용자,https://soundraw.io/,soundraw.png
+Soundraw,음악,1,2,1,연구자,https://soundraw.io/,soundraw.png
+Soundraw,음악,1,2,0,학생,https://soundraw.io/,soundraw.png
+Soundraw,음악,0,1,1,마케터,https://soundraw.io/,soundraw.png
+Soundraw,음악,0,1,0,초보자,https://soundraw.io/,soundraw.png
+Soundraw,음악,1,2,1,콘텐츠 전문가,https://soundraw.io/,soundraw.png
+Soundraw,음악,1,2,0,디자이너,https://soundraw.io/,soundraw.png
+Soundraw,음악,0,1,1,업무 사용자,https://soundraw.io/,soundraw.png
+Soundraw,음악,1,2,1,일상 사용자,https://soundraw.io/,soundraw.png
+Soundraw,음악,1,2,1,연구자,https://soundraw.io/,soundraw.png
+Soundraw,음악,0,1,0,학생,https://soundraw.io/,soundraw.png
+Suno.ai,음악,1,2,1,업무 사용자,https://suno.ai/,suno.ai.png
+Suno.ai,음악,3,3,3,연구자,https://suno.ai/,suno.ai.png
+Suno.ai,음악,1,1,1,학생,https://suno.ai/,suno.ai.png
+Suno.ai,음악,3,3,2,마케터,https://suno.ai/,suno.ai.png
+Suno.ai,음악,0,1,0,초보자,https://suno.ai/,suno.ai.png
+Suno.ai,음악,1,2,0,콘텐츠 전문가,https://suno.ai/,suno.ai.png
+Suno.ai,음악,2,3,1,디자이너,https://suno.ai/,suno.ai.png
+Suno.ai,음악,1,2,1,일상 사용자,https://suno.ai/,suno.ai.png
+Suno.ai,음악,3,3,3,업무 사용자,https://suno.ai/,suno.ai.png
+Suno.ai,음악,1,2,1,연구자,https://suno.ai/,suno.ai.png
+Suno.ai,음악,3,3,3,연구자,https://suno.ai/,suno.ai.png
+Suno.ai,음악,2,3,2,학생,https://suno.ai/,suno.ai.png
+Suno.ai,음악,3,3,2,마케터,https://suno.ai/,suno.ai.png
+Suno.ai,음악,1,1,0,초보자,https://suno.ai/,suno.ai.png
+Suno.ai,음악,3,3,3,콘텐츠 전문가,https://suno.ai/,suno.ai.png
+Suno.ai,음악,3,3,2,디자이너,https://suno.ai/,suno.ai.png
+Suno.ai,음악,1,2,1,일상 사용자,https://suno.ai/,suno.ai.png
+Suno.ai,음악,3,3,3,업무 사용자,https://suno.ai/,suno.ai.png
+Suno.ai,음악,3,3,3,연구자,https://suno.ai/,suno.ai.png
+Suno.ai,음악,1,2,1,학생,https://suno.ai/,suno.ai.png
+Udio,음악,3,3,3,업무 사용자,https://www.udio.com/,udio.png
+Udio,음악,3,3,2,연구자,https://www.udio.com/,udio.png
+Udio,음악,2,3,2,학생,https://www.udio.com/,udio.png
+Udio,음악,1,1,0,마케터,https://www.udio.com/,udio.png
+Udio,음악,0,1,0,초보자,https://www.udio.com/,udio.png
+Udio,음악,3,3,3,콘텐츠 전문가,https://www.udio.com/,udio.png
+Udio,음악,3,3,2,디자이너,https://www.udio.com/,udio.png
+Udio,음악,2,3,2,일상 사용자,https://www.udio.com/,udio.png
+Udio,음악,3,3,3,업무 사용자,https://www.udio.com/,udio.png
+Udio,음악,2,3,2,연구자,https://www.udio.com/,udio.png
+DALL·E 2,이미지,0,1,0,일상 사용자,https://openai.com/dall-e-2,dall·e_2.png
+DALL·E 2,이미지,0,1,1,학생,https://openai.com/dall-e-2,dall·e_2.png
+DALL·E 2,이미지,1,2,0,연구자,https://openai.com/dall-e-2,dall·e_2.png
+DALL·E 2,이미지,2,3,2,마케터,https://openai.com/dall-e-2,dall·e_2.png
+DALL·E 2,이미지,0,1,0,초보자,https://openai.com/dall-e-2,dall·e_2.png
+DALL·E 2,이미지,0,1,1,콘텐츠 전문가,https://openai.com/dall-e-2,dall·e_2.png
+DALL·E 2,이미지,2,3,2,디자이너,https://openai.com/dall-e-2,dall·e_2.png
+DALL·E 2,이미지,0,1,0,업무 사용자,https://openai.com/dall-e-2,dall·e_2.png
+DALL·E 2,이미지,2,3,2,연구자,https://openai.com/dall-e-2,dall·e_2.png
+DALL·E 2,이미지,0,1,0,일상 사용자,https://openai.com/dall-e-2,dall·e_2.png
+DALL·E 3,이미지,2,3,2,디자이너,https://openai.com/dall-e,dall·e_3.png
+DALL·E 3,이미지,1,2,0,학생,https://openai.com/dall-e,dall·e_3.png
+DALL·E 3,이미지,3,3,2,연구자,https://openai.com/dall-e,dall·e_3.png
+DALL·E 3,이미지,2,2,2,마케터,https://openai.com/dall-e,dall·e_3.png
+DALL·E 3,이미지,0,1,0,초보자,https://openai.com/dall-e,dall·e_3.png
+DALL·E 3,이미지,2,3,2,콘텐츠 전문가,https://openai.com/dall-e,dall·e_3.png
+DALL·E 3,이미지,3,3,3,일상 사용자,https://openai.com/dall-e,dall·e_3.png
+DALL·E 3,이미지,2,3,0,업무 사용자,https://openai.com/dall-e,dall·e_3.png
+DALL·E 3,이미지,2,3,2,연구자,https://openai.com/dall-e,dall·e_3.png
+DALL·E 3,이미지,3,3,3,디자이너,https://openai.com/dall-e,dall·e_3.png
+DreamBooth,이미지,3,3,3,일상 사용자,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,2,3,2,연구자,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,3,3,2,마케터,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,1,1,0,초보자,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,3,3,3,콘텐츠 전문가,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,2,3,2,디자이너,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,3,3,3,학생,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,1,2,0,업무 사용자,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,3,3,3,연구자,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,2,3,2,일상 사용자,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,2,3,2,연구자,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,2,3,0,학생,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,3,3,2,마케터,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,3,3,1,초보자,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,2,3,2,콘텐츠 전문가,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,2,3,0,디자이너,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,3,3,2,업무 사용자,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,3,3,3,일상 사용자,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,2,3,2,연구자,https://dreambooth.github.io/,dreambooth.png
+DreamBooth,이미지,2,3,2,학생,https://dreambooth.github.io/,dreambooth.png
+Midjourney v4,이미지,2,3,2,연구자,https://www.midjourney.com/,midjourney_v4.png
+Midjourney v4,이미지,2,3,0,학생,https://www.midjourney.com/,midjourney_v4.png
+Midjourney v4,이미지,3,3,2,마케터,https://www.midjourney.com/,midjourney_v4.png
+Midjourney v4,이미지,1,1,0,초보자,https://www.midjourney.com/,midjourney_v4.png
+Midjourney v4,이미지,2,3,2,콘텐츠 전문가,https://www.midjourney.com/,midjourney_v4.png
+Midjourney v4,이미지,3,3,3,디자이너,https://www.midjourney.com/,midjourney_v4.png
+Midjourney v4,이미지,2,3,2,일상 사용자,https://www.midjourney.com/,midjourney_v4.png
+Midjourney v4,이미지,2,3,0,업무 사용자,https://www.midjourney.com/,midjourney_v4.png
+Midjourney v4,이미지,3,3,3,연구자,https://www.midjourney.com/,midjourney_v4.png
+Midjourney v4,이미지,2,3,2,학생,https://www.midjourney.com/,midjourney_v4.png
+Midjourney v5,이미지,2,3,2,디자이너,https://www.midjourney.com/,midjourney_v5.png
+Midjourney v5,이미지,1,2,0,학생,https://www.midjourney.com/,midjourney_v5.png
+Midjourney v5,이미지,3,3,2,연구자,https://www.midjourney.com/,midjourney_v5.png
+Midjourney v5,이미지,2,2,2,마케터,https://www.midjourney.com/,midjourney_v5.png
+Midjourney v5,이미지,0,1,0,초보자,https://www.midjourney.com/,midjourney_v5.png
+Midjourney v5,이미지,2,3,2,콘텐츠 전문가,https://www.midjourney.com/,midjourney_v5.png
+Midjourney v5,이미지,3,3,3,일상 사용자,https://www.midjourney.com/,midjourney_v5.png
+Midjourney v5,이미지,2,3,0,업무 사용자,https://www.midjourney.com/,midjourney_v5.png
+Midjourney v5,이미지,2,3,2,연구자,https://www.midjourney.com/,midjourney_v5.png
+Midjourney v5,이미지,3,3,3,디자이너,https://www.midjourney.com/,midjourney_v5.png
+Playground v2,이미지,3,3,3,학생,https://playground.com/,playground_v2.png
+Playground v2,이미지,2,3,2,일상 사용자,https://playground.com/,playground_v2.png
+Playground v2,이미지,2,2,2,마케터,https://playground.com/,playground_v2.png
+Playground v2,이미지,0,1,0,초보자,https://playground.com/,playground_v2.png
+Playground v2,이미지,3,3,3,연구자,https://playground.com/,playground_v2.png
+Playground v2,이미지,2,3,2,업무 사용자,https://playground.com/,playground_v2.png
+Playground v2,이미지,2,3,0,디자이너,https://playground.com/,playground_v2.png
+Playground v2,이미지,3,3,2,콘텐츠 전문가,https://playground.com/,playground_v2.png
+Playground v2,이미지,3,3,3,일상 사용자,https://playground.com/,playground_v2.png
+Playground v2,이미지,2,3,2,연구자,https://playground.com/,playground_v2.png
+Playground v2,이미지,2,3,2,일상 사용자,https://playground.com/,playground_v2.png
+Playground v2,이미지,2,3,0,학생,https://playground.com/,playground_v2.png
+Playground v2,이미지,3,3,2,연구자,https://playground.com/,playground_v2.png
+Playground v2,이미지,1,1,0,마케터,https://playground.com/,playground_v2.png
+Playground v2,이미지,0,1,0,초보자,https://playground.com/,playground_v2.png
+Playground v2,이미지,2,3,2,콘텐츠 전문가,https://playground.com/,playground_v2.png
+Playground v2,이미지,3,3,3,디자이너,https://playground.com/,playground_v2.png
+Playground v2,이미지,2,3,2,업무 사용자,https://playground.com/,playground_v2.png
+Playground v2,이미지,2,3,2,연구자,https://playground.com/,playground_v2.png
+Playground v2,이미지,3,3,3,학생,https://playground.com/,playground_v2.png
+Stable Diffusion,이미지,2,3,2,학생,https://stablediffusionweb.com/,stable_diffusion.png
+Stable Diffusion,이미지,2,3,0,연구자,https://stablediffusionweb.com/,stable_diffusion.png
+Stable Diffusion,이미지,3,3,2,마케터,https://stablediffusionweb.com/,stable_diffusion.png
+Stable Diffusion,이미지,1,1,0,초보자,https://stablediffusionweb.com/,stable_diffusion.png
+Stable Diffusion,이미지,2,3,2,콘텐츠 전문가,https://stablediffusionweb.com/,stable_diffusion.png
+Stable Diffusion,이미지,3,3,3,디자이너,https://stablediffusionweb.com/,stable_diffusion.png
+Stable Diffusion,이미지,2,3,2,일상 사용자,https://stablediffusionweb.com/,stable_diffusion.png
+Stable Diffusion,이미지,2,3,0,업무 사용자,https://stablediffusionweb.com/,stable_diffusion.png
+Stable Diffusion,이미지,3,3,3,연구자,https://stablediffusionweb.com/,stable_diffusion.png
+Stable Diffusion,이미지,2,3,2,학생,https://stablediffusionweb.com/,stable_diffusion.png
+ChatGPT 3.5,텍스트,0,1,0,초보자,https://chat.openai.com/,chatgpt.png
+ChatGPT 3.5,텍스트,0,1,1,학생,https://chat.openai.com/,chatgpt.png
+ChatGPT 3.5,텍스트,1,2,0,연구자,https://chat.openai.com/,chatgpt.png
+ChatGPT 3.5,텍스트,1,2,1,콘텐츠 전문가,https://chat.openai.com/,chatgpt.png
+ChatGPT 3.5,텍스트,0,1,0,업무 사용자,https://chat.openai.com/,chatgpt.png
+ChatGPT 3.5,텍스트,1,2,0,디자이너,https://chat.openai.com/,chatgpt.png
+ChatGPT 3.5,텍스트,0,1,1,일상 사용자,https://chat.openai.com/,chatgpt.png
+ChatGPT 3.5,텍스트,1,2,1,마케터,https://chat.openai.com/,chatgpt.png
+ChatGPT 3.5,텍스트,0,1,0,초심자,https://chat.openai.com/,chatgpt.png
+ChatGPT 3.5,텍스트,1,2,1,학생,https://chat.openai.com/,chatgpt.png
+ChatGPT 4.0,텍스트,3,3,3,연구자,https://chat.openai.com/,chatgpt.png
+ChatGPT 4.0,텍스트,3,3,2,학생,https://chat.openai.com/,chatgpt.png
+ChatGPT 4.0,텍스트,2,3,3,마케터,https://chat.openai.com/,chatgpt.png
+ChatGPT 4.0,텍스트,1,2,2,초보자,https://chat.openai.com/,chatgpt.png
+ChatGPT 4.0,텍스트,3,3,3,콘텐츠 전문가,https://chat.openai.com/,chatgpt.png
+ChatGPT 4.0,텍스트,3,3,2,디자이너,https://chat.openai.com/,chatgpt.png
+ChatGPT 4.0,텍스트,2,3,3,업무 사용자,https://chat.openai.com/,chatgpt.png
+ChatGPT 4.0,텍스트,3,3,3,일상 사용자,https://chat.openai.com/,chatgpt.png
+ChatGPT 4.0,텍스트,3,3,3,연구자,https://chat.openai.com/,chatgpt.png
+ChatGPT 4.0,텍스트,2,3,2,학생,https://chat.openai.com/,chatgpt.png
+Claude Opus,텍스트,3,3,3,콘텐츠 전문가,https://claude.ai/,claude.png
+Claude Opus,텍스트,3,3,2,연구자,https://claude.ai/,claude.png
+Claude Opus,텍스트,2,3,3,학생,https://claude.ai/,claude.png
+Claude Opus,텍스트,2,2,2,마케터,https://claude.ai/,claude.png
+Claude Opus,텍스트,0,1,0,초보자,https://claude.ai/,claude.png
+Claude Opus,텍스트,3,3,3,업무 사용자,https://claude.ai/,claude.png
+Claude Opus,텍스트,3,3,2,디자이너,https://claude.ai/,claude.png
+Claude Opus,텍스트,2,3,3,콘텐츠 크리에이터,https://claude.ai/,claude.png
+Claude Opus,텍스트,3,3,3,일상 사용자,https://claude.ai/,claude.png
+Claude Opus,텍스트,3,3,3,연구자,https://claude.ai/,claude.png
+Claude Sonnet,텍스트,2,3,2,일상 사용자,https://claude.ai/,claude.png
+Claude Sonnet,텍스트,2,3,0,학생,https://claude.ai/,claude.png
+Claude Sonnet,텍스트,3,3,2,연구자,https://claude.ai/,claude.png
+Claude Sonnet,텍스트,3,3,3,마케터,https://claude.ai/,claude.png
+Claude Sonnet,텍스트,1,1,0,초보자,https://claude.ai/,claude.png
+Claude Sonnet,텍스트,2,3,2,콘텐츠 전문가,https://claude.ai/,claude.png
+Claude Sonnet,텍스트,2,3,0,디자이너,https://claude.ai/,claude.png
+Claude Sonnet,텍스트,3,3,2,업무 사용자,https://claude.ai/,claude.png
+Claude Sonnet,텍스트,2,3,2,일상 사용자,https://claude.ai/,claude.png
+Claude Sonnet,텍스트,3,3,3,연구자,https://claude.ai/,claude.png
+Gemini 1.5,텍스트,2,3,2,콘텐츠 크리에이터,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,1,2,0,학생,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,3,3,3,일상 사용자,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,3,3,2,연구자,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,2,2,2,마케터,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,0,1,0,초보자,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,1,2,0,업무 사용자,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,3,3,2,디자이너,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,2,3,2,콘텐츠 전문가,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,3,3,3,연구자,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,3,3,3,일상 사용자,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,3,3,2,학생,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,2,3,3,연구자,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,2,2,2,마케터,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,0,1,0,초보자,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,3,3,3,콘텐츠 전문가,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,3,3,2,디자이너,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,2,3,3,업무 사용자,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,3,3,3,일상 사용자,https://deepmind.google/technologies/gemini/,gemini.png
+Gemini 1.5,텍스트,2,3,2,학생,https://deepmind.google/technologies/gemini/,gemini.png
+Notion AI,텍스트,0,1,0,초보자,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,0,1,1,학생,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,1,2,0,연구자,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,2,3,1,콘텐츠 전문가,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,0,1,0,업무 사용자,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,1,2,0,디자이너,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,0,1,1,일상 사용자,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,2,3,2,마케터,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,0,1,0,초심자,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,3,3,2,연구자,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,3,3,3,연구자,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,3,3,2,학생,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,2,3,3,마케터,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,1,2,2,초보자,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,3,3,3,콘텐츠 전문가,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,3,3,2,디자이너,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,2,3,3,업무 사용자,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,3,3,3,일상 사용자,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,3,3,3,연구자,https://www.notion.so/product/ai,notion_ai.png
+Notion AI,텍스트,2,3,2,학생,https://www.notion.so/product/ai,notion_ai.png
+Perplexity AI,텍스트,2,3,2,학생,https://www.perplexity.ai/,perplexity_ai.png
+Perplexity AI,텍스트,2,3,0,연구자,https://www.perplexity.ai/,perplexity_ai.png
+Perplexity AI,텍스트,3,3,2,마케터,https://www.perplexity.ai/,perplexity_ai.png
+Perplexity AI,텍스트,1,1,0,초보자,https://www.perplexity.ai/,perplexity_ai.png
+Perplexity AI,텍스트,2,3,2,콘텐츠 전문가,https://www.perplexity.ai/,perplexity_ai.png
+Perplexity AI,텍스트,3,3,3,디자이너,https://www.perplexity.ai/,perplexity_ai.png
+Perplexity AI,텍스트,2,3,2,일상 사용자,https://www.perplexity.ai/,perplexity_ai.png
+Perplexity AI,텍스트,2,3,0,업무 사용자,https://www.perplexity.ai/,perplexity_ai.png
+Perplexity AI,텍스트,3,3,3,연구자,https://www.perplexity.ai/,perplexity_ai.png
+Perplexity AI,텍스트,2,3,2,학생,https://www.perplexity.ai/,perplexity_ai.png
+Voice.ai,음성,2,3,2,업무 사용자,https://voice.ai/,voice.ai.png
+Murf.ai,음성,1,3,1,콘텐츠 전문가,https://murf.ai/,murf.ai.png
+Descript,음성,1,3,2,일상 사용자,https://www.descript.com/,descript.png
+Resemble.ai,음성,2,3,2,연구자,https://www.resemble.ai/,resemble.ai.png
+Play.ht,음성,1,2,1,초보자,https://play.ht/,play.ht.png
