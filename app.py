@@ -101,7 +101,7 @@ def recommend():
         return jsonify({"error": str(e)}), 500
 
 @app.route("/auth/status", methods=["GET", "OPTIONS"])
-@cross_origin(origins="http://127.0.0.1:5500", supports_credentials=True)
+@cross_origin(origins=["https://aplusi.onrender.com", "http://127.0.0.1:5500"], supports_credentials=True)
 def auth_status():
     if request.method == "OPTIONS":
         return '', 200
