@@ -6,7 +6,7 @@ const fixedNotices = [
         views: '-',
         link: 'fixed_notice_1.html',
         is_fixed: true,
-        image: 'notice_png/aiplus_guide.png'
+        image: '/static/notice_png/aiplus_guide.png'
     }
 ];
 
@@ -73,7 +73,7 @@ function renderNotices(notices) {
         card.classList.add('notice-card');
         card.innerHTML = `
             <a href="#" class="placeholder-link">
-                <img src="notice_png/empty.svg" alt="썸네일" class="notice-thumb">
+                <img src="/static/notice_png/empty.svg" alt="썸네일" class="notice-thumb">
                 <div class="notice-info">
                     <h3 class="notice-title">${notice.notice_title}</h3>
                     <p class="notice-meta">작성일: ${notice.date} | 조회수: ${notice.views}</p>

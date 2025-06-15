@@ -6,7 +6,7 @@ const fixedNotices = [
         views: '-',
         link: 'tip_1.html',
         is_fixed: true,
-        image: 'tip_png/tip_1.png'
+        image: '/static/tip_png/tip_1.png'
     }
 ];
 
@@ -69,7 +69,7 @@ function renderNotices(notices) {
             date: '-',
             views: '-',
             link: '#',
-            image: 'tip_png/empty.svg',
+            image: '/static/tip_png/empty.svg',
             is_fixed: false
         });
     }
