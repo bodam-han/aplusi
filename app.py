@@ -106,9 +106,16 @@ def auth_status():
         return '', 200
     return jsonify({"isAdmin": False})
 
+
 @app.route("/aisearch")
 def show_search():
     return render_template("aisearch.html")
+
+
+# notice_1.html route
+@app.route("/notice_1")
+def notice_1():
+    return render_template("notice_1.html")
 
 
 # CORS headers for all responses
