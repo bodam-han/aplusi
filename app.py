@@ -115,7 +115,7 @@ def show_search():
 # notice_1.html route
 @app.route("/notice_1")
 def notice_1():
-    return render_template("notice.html")
+    return render_template("fixed_notice_1.html")
 
 
 # CORS headers for all responses
