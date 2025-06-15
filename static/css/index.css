@@ -1,3 +1,18 @@
+.search-container a.button-link {
+  display: inline-block;
+  background-color: #d94f4f;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  text-decoration: none;
+}
+
+.search-container a.button-link:hover {
+  background-color: #b93e3e;
+}
 @import url(./media_query.css);
 /* 한국어는 Black Han Sans, 영어는 Anton 적용 */
 body {
