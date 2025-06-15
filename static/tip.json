@@ -4,7 +4,7 @@
     "tip_title": "[대학생활 Tip] 교수님께 메일 보낼 때 실수하지 않는 법",
     "date": "2025-06-10",
     "views": "-",
-    "link": "{{ url_for('static', filename='tip_1.html') }}",
+    "link": "/static/tip_1.html",
     "is_fixed": false,
     "image": "/static/tip_png/tip_1.png"
   },
@@ -15,6 +15,6 @@
     "views": "-",
     "link": "/static/tip_2.html",
     "is_fixed": false,
-    "image": "{{ url_for('static', filename='tip_2.html') }}"
+    "image": "/static/tip_png/tip_2.png"
   }
 ]

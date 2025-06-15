@@ -1,12 +1,10 @@
-
-
 [
   {
     "id": "aiplus-guide",
     "title": "[사용법] 에이쁠아이 이용 가이드",
     "date": "2025-06-10",
     "views": "-",
-    "link": "{{ url_for('notice_1') }}",
+    "link": "fixed_notice_1.html",
     "is_fixed": true,
     "image": "./static/notice_png/aiplus_guide.png"
   }
