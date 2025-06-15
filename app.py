@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS, cross_origin
 from model import load_data, find_similar_tools
 
-CORS_origins = ["http://127.0.0.1:5500"]
 # Explicitly define static_url_path and static_folder for serving static files
 app = Flask(__name__, static_url_path='/static', static_folder='.')
 CORS(app, resources={r"/*": {"origins": "http://127.0.0.1:5500"}}, supports_credentials=True)
