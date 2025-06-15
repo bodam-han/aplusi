@@ -70,6 +70,12 @@ a {
     .navbar.expanded {
         height: 330px;
     }
+    .navbar_menu li:hover {
+        background-color: #b3aaaa;
+        border-radius: 4px;
+        width: 100%;
+    }
+
 }
 
 
