@@ -5,16 +5,6 @@ window.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       document.getElementById("header-placeholder").innerHTML = data;
 
-      // Fix relative links in dynamically loaded header
-      const headerLinks = document.querySelectorAll("#header-placeholder .navbar_menu a");
-      headerLinks.forEach(link => {
-        const href = link.getAttribute("href");
-        if (href === "/project") link.setAttribute("href", "/project.html");
-        else if (href === "/search") link.setAttribute("href", "/aisearch.html");
-        else if (href === "/tip") link.setAttribute("href", "/tip.html");
-        else if (href === "/notice") link.setAttribute("href", "/notice.html");
-      });
-
       // Update logo link
       const logoLink = document.querySelector("#header-placeholder a[href='/search']");
       if (logoLink) {
