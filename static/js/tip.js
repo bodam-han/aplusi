@@ -16,30 +16,31 @@ async function fetchNotices(page = 1) {
         const normal = dbNotices.filter(tip => !tip.is_fixed);
 
         renderFixedNotices(fixed);
-        renderNotices(normal);
+        renderNotices(normal); // 정상적으로 tip 참조
     } catch (error) {
         console.error('대학생활 팁 불러오기 실패:', error);
     }
 }
 
 function renderFixedNotices(fixedNotices) {
-    const container = document.getElementById('notice-list');
+    const container = document.getElementById('tip-list');
     if (!container) return;
 
     container.innerHTML = ''; // 기존 내용 초기화
 
     fixedNotices.forEach(tip => {
+        if (!tip || !tip.title || !tip.link || !tip.image || !tip.date || !tip.views) return;
         const card = document.createElement('div');
-        card.classList.add('notice-card');
+        card.classList.add('tip-card');
         card.innerHTML = `
             <a href="./${tip.link}">
-                <img src="${tip.image}" alt="썸네일" class="notice-thumb">
-                <div class="notice-info">
-                    <h3 class="notice-title">
+                <img src="${tip.image}" alt="썸네일" class="tip-thumb">
+                <div class="tip-info">
+                    <h3 class="tip-title">
                         ${tip.is_fixed ? '<span class="fixed-pin">📌</span>' : ''}
                         ${tip.title}
                     </h3>
-                    <p class="notice-meta">작성일: ${tip.date} | 조회수: ${tip.views}</p>
+                    <p class="tip-meta">작성일: ${tip.date} | 조회수: ${tip.views}</p>
                 </div>
             </a>
         `;
@@ -49,7 +50,7 @@ function renderFixedNotices(fixedNotices) {
 
 // 일반 공지 렌더링 (고정 공지 아래에 표시) - 실제 tip.json 데이터로 렌더링
 function renderNotices(notices) {
-    const container = document.getElementById('notice-list');
+    const container = document.getElementById('tip-list');
     if (!container) return;
 
     // 고정 공지 이후, 일반 공지만 추가로 렌더링해야 하므로 기존 내용이 비어있지 않으면 그대로 두기 (고정 공지 render 후 호출됨)
@@ -88,29 +89,38 @@ function renderNotices(notices) {
     }
 
     noticesToRender.forEach(tip => {
+        if (!tip) return;
         const card = document.createElement('div');
-        card.classList.add('notice-card');
+        card.classList.add('tip-card');
 
         if (tip.is_placeholder) {
             card.innerHTML = `
                 <a href="#" class="placeholder-link">
-                    <img src="${tip.image}" alt="썸네일" class="notice-thumb">
-                    <div class="notice-info">
-                        <h3 class="notice-title">${tip.title}</h3>
-                        <p class="notice-meta">작성일: ${tip.date} | 조회수: ${tip.views}</p>
+                    <img src="${tip.image || './static/tip_png/empty.svg'}" alt="썸네일" class="tip-thumb">
+                    <div class="tip-info">
+                        <h3 class="tip-title">${tip.title || '등록된 꿀팁이 없습니다.'}</h3>
+                        <p class="tip-meta">작성일: ${tip.date || '-'} | 조회수: ${tip.views || '-'}</p>
                     </div>
                 </a>
             `;
         } else {
+            // 검증 추가
+            const title = tip.title || '제목 없음';
+            const link = tip.link || '#';
+            const image = tip.image || './static/tip_png/empty.svg';
+            const date = tip.date || '-';
+            const views = tip.views || '-';
+            const is_fixed = tip.is_fixed || false;
+
             card.innerHTML = `
-                <a href="./${tip.link}">
-                    <img src="${tip.image}" alt="썸네일" class="notice-thumb">
-                    <div class="notice-info">
-                        <h3 class="notice-title">
-                            ${tip.is_fixed ? '<span class="fixed-pin">📌</span>' : ''}
-                            ${tip.title}
+                <a href="./${link}">
+                    <img src="${image}" alt="썸네일" class="tip-thumb">
+                    <div class="tip-info">
+                        <h3 class="tip-title">
+                            ${is_fixed ? '<span class="fixed-pin">📌</span>' : ''}
+                            ${title}
                         </h3>
-                        <p class="notice-meta">작성일: ${tip.date} | 조회수: ${tip.views}</p>
+                        <p class="tip-meta">작성일: ${date} | 조회수: ${views}</p>
                     </div>
                 </a>
             `;
@@ -189,11 +199,11 @@ async function checkAdmin() {
             writeBtn.classList.add('write-btn');
             writeBtn.onclick = () => location.href = '/write_tip.html';
 
-            const container = document.querySelector('.notice-container');
+            const container = document.querySelector('.tip-container');
             if (container) {
                 container.prepend(writeBtn);
             } else {
-                console.error('.notice-container 요소가 없습니다.');
+                console.error('.tip-container 요소가 없습니다.');
             }
         }
     } catch (error) {
