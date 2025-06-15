@@ -3,7 +3,7 @@ let isLastPage = false;
 
 async function fetchNotices(page = 1) {
     try {
-        const response = await fetch('/tip.json');
+        const response = await fetch(`${window.location.origin}/tip.json`);
         const dbNotices = await response.json();
 
         if (dbNotices.length === 0) {
