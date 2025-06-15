@@ -1,15 +1,3 @@
-const fixedNotices = [
-    {
-        id: 'aiplus-guide',
-        title: '[사용법] 에이쁠아이 이용 가이드',
-        date: '2025-06-10',
-        views: '-',
-        link: '/fixed_notice_1.html',
-        is_fixed: true,
-        image: './static/notice_png/aiplus_guide.png'
-    }
-];
-
 let currentPage = 1;
 let isLastPage = false;
 
@@ -18,26 +6,31 @@ async function fetchNotices(page = 1) {
         const response = await fetch('/notices.json');
         const dbNotices = await response.json();
 
-        if (dbNotices.length === 0) {
+        if (dbNotices.length === 0 || page > 1) {
             isLastPage = true;
-            alert('더 이상 내용이 없습니다.');
+            alert('최대 페이지입니다.');
+            currentPage = 1;
             return;
         }
 
-        renderNotices(dbNotices);
+        const fixed = dbNotices.filter(n => n.is_fixed);
+        const normal = dbNotices.filter(n => !n.is_fixed);
+
+        renderFixedNotices(fixed);
+        renderNotices(normal);
     } catch (error) {
         console.error('공지사항 불러오기 실패:', error);
     }
 }
 
 // 고정 공지 렌더링 (맨 위에 표시)
-function renderFixedNotices() {
+function renderFixedNotices(notices) {
     const container = document.getElementById('notice-list');
     if (!container) return;
 
     container.innerHTML = ''; // 기존 내용 초기화
 
-    fixedNotices.forEach(notice => {
+    notices.forEach(notice => {
         const card = document.createElement('div');
         card.classList.add('notice-card');
         card.innerHTML = `
@@ -61,23 +54,21 @@ function renderNotices(notices) {
     const container = document.getElementById('notice-list');
     if (!container) return;
 
-    const placeholders = Array(5).fill().map((_, i) => ({
-        notice_id: `empty-${i}`,
-        notice_title: '공지사항 없음',
-        date: '-',
-        views: '-',
-        is_fixed: false,
-        is_placeholder: true
-    }));
+    // 고정 공지들이 이미 추가되어 있으므로 빈칸 초기화하지 않음
+    // 대신 일반 공지들을 추가
 
-    placeholders.forEach(notice => {
+    const totalSlots = 5;
+    const noticesToRender = notices.slice(0, totalSlots);
+    const emptySlots = totalSlots - noticesToRender.length;
+
+    noticesToRender.forEach(notice => {
         const card = document.createElement('div');
         card.classList.add('notice-card');
         card.innerHTML = `
-            <a href="#" class="placeholder-link">
-                <img src="./static/notice_png/empty.svg" alt="썸네일" class="notice-thumb">
+            <a href="${notice.link}">
+                <img src="${notice.image}" alt="썸네일" class="notice-thumb">
                 <div class="notice-info">
-                    <h3 class="notice-title">${notice.notice_title}</h3>
+                    <h3 class="notice-title">${notice.title}</h3>
                     <p class="notice-meta">작성일: ${notice.date} | 조회수: ${notice.views}</p>
                 </div>
             </a>
@@ -85,7 +76,21 @@ function renderNotices(notices) {
         container.appendChild(card);
     });
 
-    // 클릭 시 알림 처리
+    for (let i = 0; i < emptySlots; i++) {
+        const card = document.createElement('div');
+        card.classList.add('notice-card');
+        card.innerHTML = `
+            <a href="#" class="placeholder-link">
+                <img src="./static/notice_png/empty.svg" alt="썸네일" class="notice-thumb">
+                <div class="notice-info">
+                    <h3 class="notice-title">공지사항 없음</h3>
+                    <p class="notice-meta">작성일: - | 조회수: -</p>
+                </div>
+            </a>
+        `;
+        container.appendChild(card);
+    }
+
     document.querySelectorAll('.placeholder-link').forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -97,7 +102,6 @@ function renderNotices(notices) {
 
 // 고정 공지를 먼저 렌더링하고, 일반 공지를 불러오는 방식
 document.addEventListener('DOMContentLoaded', () => {
-    renderFixedNotices();  // 먼저 고정 공지 렌더링
     fetchNotices();  // 첫 페이지 불러오기
 
     const loadMoreBtn = document.querySelector('#load-more-btn');
