@@ -41,7 +41,7 @@ function renderFixedNotices() {
         const card = document.createElement('div');
         card.classList.add('notice-card');
         card.innerHTML = `
-            <a href="${notice.link}">
+            <a href="./${notice.link}">
                 <img src="${notice.image}" alt="썸네일" class="notice-thumb">
                 <div class="notice-info">
                     <h3 class="notice-title">

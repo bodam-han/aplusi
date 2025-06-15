@@ -32,7 +32,7 @@ function renderFixedNotices(fixedNotices) {
         const card = document.createElement('div');
         card.classList.add('notice-card');
         card.innerHTML = `
-            <a href="${notice.link}">
+            <a href="./${tip.link}">
                 <img src="${notice.image}" alt="썸네일" class="notice-thumb">
                 <div class="notice-info">
                     <h3 class="notice-title">
@@ -103,7 +103,7 @@ function renderNotices(notices) {
             `;
         } else {
             card.innerHTML = `
-                <a href="${notice.link}">
+                <a href="./${tip.link}">
                     <img src="${notice.image}" alt="썸네일" class="notice-thumb">
                     <div class="notice-info">
                         <h3 class="notice-title">
