@@ -4,7 +4,7 @@ from model import load_data, find_similar_tools
 
 # Explicitly define static_url_path and static_folder for serving static files
 app = Flask(__name__, static_url_path='/static', static_folder='.')
-CORS(app, resources={r"/*": {"origins": "http://127.0.0.1:5500"}}, supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": ["http://127.0.0.1:5500", "https://aplusi.onrender.com"]}}, supports_credentials=True)
 
 # 데이터 로드
 data = load_data()
