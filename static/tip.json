@@ -6,7 +6,7 @@
     "views": "-",
     "link": "tip_1.html",
     "is_fixed": false,
-    "image": "tip_png/tip_1.png"
+    "image": "/static/tip_png/tip_1.png"
   },
   {
     "tip_id": "T002",
@@ -15,6 +15,6 @@
     "views": "-",
     "link": "tip_2.html",
     "is_fixed": false,
-    "image": "tip_png/tip_2.png"
+    "image": "/static/tip_png/tip_2.png"
   }
 ]
