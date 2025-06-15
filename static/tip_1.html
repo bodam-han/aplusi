@@ -131,11 +131,11 @@
 
 <div id="footer-placeholder"></div>
 <!-- JavaScript 파일 링크 -->
-<script src="{{ url_for('static', filename='js/header_footer.js') }}"></script>
+<script src="/static/js/header_footer.js"></script>
 <script src="/static/js/tip.js"></script>
 <script>
   function goBack() {
-    window.location.href = '{{ url_for("static", filename="tip.html") }}';
+    window.location.href = '/tip.html';
   }
 </script>
 </body>

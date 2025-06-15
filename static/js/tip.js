@@ -29,7 +29,7 @@ function renderFixedNotices(fixedNotices) {
     container.innerHTML = ''; // 기존 내용 초기화
 
     fixedNotices.forEach(tip => {
-        if (!tip || !tip.title || !tip.link || !tip.image || !tip.date || !tip.views) return;
+        if (!tip || !tip.tip_title || !tip.link || !tip.image || !tip.date || !tip.views) return;
         const card = document.createElement('div');
         card.classList.add('tip-card');
         card.innerHTML = `
@@ -38,7 +38,7 @@ function renderFixedNotices(fixedNotices) {
                 <div class="tip-info">
                     <h3 class="tip-title">
                         ${tip.is_fixed ? '<span class="fixed-pin">📌</span>' : ''}
-                        ${tip.title}
+                        ${tip.tip_title}
                     </h3>
                     <p class="tip-meta">작성일: ${tip.date} | 조회수: ${tip.views}</p>
                 </div>
@@ -105,7 +105,7 @@ function renderTips(tips) {
             `;
         } else {
             // 검증 추가
-            const title = tip.title || '제목 없음';
+            const title = tip.tip_title || '제목 없음';
             const link = tip.link || '#';
             const image = tip.image || './static/tip_png/empty.svg';
             const date = tip.date || '-';
