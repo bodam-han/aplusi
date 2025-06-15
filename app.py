@@ -108,7 +108,7 @@ def auth_status():
 
 
 @app.route("/aisearch")
-def show_search():
+def aisearch():
     return render_template("aisearch.html")
 
 @app.route("/notice")
