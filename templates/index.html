@@ -184,13 +184,13 @@
     <script src="{{ url_for('static', filename='js/index.js') }}" defer></script>
     <script>
       window.addEventListener('DOMContentLoaded', () => {
-        fetch("{{ url_for('header') }}")
+        fetch("{{ url_for('static', filename='header.html') }}")
           .then(res => res.text())
           .then(html => {
             document.getElementById("header-placeholder").innerHTML = html;
           });
 
-        fetch("{{ url_for('footer') }}")
+        fetch("{{ url_for('static', filename='footer.html') }}")
           .then(res => res.text())
           .then(html => {
             document.getElementById("footer-placeholder").innerHTML = html;
