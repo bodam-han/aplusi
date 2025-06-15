@@ -52,7 +52,7 @@
           <div class="banner-text">
             <h2>에이쁠아이<br>이용Tip</h2>
             <h3>과제 유형별? ai찾기?</h3>
-            <a href="{{ url_for('static', filename='fixed_notice_1.html') }}">
+            <a href="{{ url_for('notice_1') }}">
               <button>자세히 알아보기</button>
             </a>
           </div>
@@ -63,7 +63,7 @@
           <img src="{{ url_for('static', filename='index_png/professor_mail.png') }}" alt="Slide 2" class="banner-img" />
           <div class="banner-text">
             <h2>교수님께 메일 잘 쓰는 법?<br> 이렇게 써보세요!</h2>
-            <a href="{{ url_for('static', filename='fixed_notice_1.html') }}">
+            <a href="{{ url_for('notice_1') }}">
               <button>자세히 알아보기</button>
             </a>
           </div>
@@ -75,7 +75,7 @@
           <div class="banner-text">
             <h2>여러분의 대학생활 꿀팁을<br>알려주세요! <br></h2>
             <h3> x월 xx일 ~ x월 xx일</h3>
-              <a href="{{ url_for('static', filename='fixed_notice_1.html') }}">
+              <a href="{{ url_for('notice_1') }}">
               <button>자세히 알아보기</button>
             </a>
           </div>
@@ -182,5 +182,20 @@
     <script src="{{ url_for('static', filename='js/header_footer.js') }}" defer></script>
     <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
     <script src="{{ url_for('static', filename='js/index.js') }}" defer></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        fetch("{{ url_for('header') }}")
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+          });
+
+        fetch("{{ url_for('footer') }}")
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById("footer-placeholder").innerHTML = html;
+          });
+      });
+    </script>
   </body>
 </html>
