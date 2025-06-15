@@ -5,7 +5,7 @@ function handleAISubmit(e) {
   const formData = new FormData(form);
   const data = Object.fromEntries(formData.entries());
 
-  fetch("/recommend", {
+  fetch("https://aplusai.onrender.com/recommend", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
