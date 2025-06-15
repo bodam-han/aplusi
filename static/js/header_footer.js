@@ -1,6 +1,6 @@
 // 헤더와 푸터를 외부 HTML 파일에서 불러오는 스크립트
 window.addEventListener("DOMContentLoaded", () => {
-  fetch("static/header.html")
+  fetch("/static/header.html")
     .then((res) => res.text())
     .then((data) => {
       document.getElementById("header-placeholder").innerHTML = data;
@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-  fetch("static/footer.html")
+  fetch("/static/footer.html")
     .then((res) => res.text())
     .then((data) => {
       document.getElementById("footer-placeholder").innerHTML = data;
