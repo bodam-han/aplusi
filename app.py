@@ -3,7 +3,7 @@ from flask_cors import CORS, cross_origin
 from model import load_data, find_similar_tools
 
 # Explicitly define static_url_path and static_folder for serving static files
-app = Flask(__name__, static_url_path='/static', static_folder='.')
+app = Flask(__name__, static_url_path='/static', static_folder='static')
 CORS(app, resources={r"/*": {"origins": ["*"]}}, supports_credentials=True)
 
 # 데이터 로드
