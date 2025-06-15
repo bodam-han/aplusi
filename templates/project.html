@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>에이쁠아이►과제유형별</title>
-  <link rel="icon" href="/static/index_png/aiplus_logo_header.png" type="image/png" />
+  <link rel="icon" href="{{ url_for('static', filename='index_png/aiplus_logo_header.png') }}" type="image/png" />
   <!-- CSS 파일을 링크 -->
-  <link rel="stylesheet" href="/static/index.css" />
-  <link rel="stylesheet" href="/static/header_footer.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='header_footer.css') }}" />
   <!-- CSS 파일을 링크 -->
-  <link rel="stylesheet" href="/static/project.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='project.css') }}" />
   <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -24,31 +24,31 @@
     <div class="task-buttons">
       <div class="task-button research-button">
         <a href="#research-id">
-          <img src="/static/project_png/research.svg" alt="자료조사 아이콘" width="80px" />
+          <img src="{{ url_for('static', filename='project_png/research.svg') }}" alt="자료조사 아이콘" width="80px" />
           <p>자료 조사</p>
         </a>
       </div>
       <div class="task-button ppt-button">
         <a href="#ppt-id">
-          <img src="/static/project_png/ppt.svg" alt="피피티 아이콘" width="80px" />
+          <img src="{{ url_for('static', filename='project_png/ppt.svg') }}" alt="피피티 아이콘" width="80px" />
           <p>피피티</p>
         </a>
       </div>
       <div class="task-button video-button">
         <a href="#video-id">
-          <img src="/static/project_png/video.svg" alt="비디오 아이콘" width="80px" />
+          <img src="{{ url_for('static', filename='project_png/video.svg') }}" alt="비디오 아이콘" width="80px" />
           <p>비디오</p>
         </a>
       </div>
       <div class="task-button report-button">
         <a href="#report-id">
-          <img src="/static/project_png/report.svg" alt="보고서 아이콘" width="80px" />
+          <img src="{{ url_for('static', filename='project_png/report.svg') }}" alt="보고서 아이콘" width="80px" />
           <p>보고서/레포트</p>
         </a>
       </div>
       <div class="task-button stat-button">
         <a href="#stat-id">
-          <img src="/static/project_png/stat.svg" alt="통계 아이콘" width="80px" />
+          <img src="{{ url_for('static', filename='project_png/stat.svg') }}" alt="통계 아이콘" width="80px" />
           <p>통계</p>
         </a>
       </div>
@@ -66,43 +66,43 @@
       <h3 class="tool-subtitle">국내 자료</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/research/dbpia.png" alt="DBpia" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/research/dbpia.png') }}" alt="DBpia" class="tool-logo" />
           <h4 class="tool-name">DBpia</h4>
           <p class="tool-desc">국내 학술지, 학회 자료를 검색</p>
           <a href="https://www.dbpia.co.kr" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/research/riss.png" alt="RISS" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/research/riss.png') }}" alt="RISS" class="tool-logo" />
           <h4 class="tool-name">RISS</h4>
           <p class="tool-desc">국내외 학위논문, <br />학술자료를 검색</p>
           <a href="https://www.riss.kr/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card service-ready">
-          <img src="/static/project_png/preparing.svg" alt="서비스 준비중" class="preparing-img" />
+          <img src="{{ url_for('static', filename='project_png/preparing.svg') }}" alt="서비스 준비중" class="preparing-img" />
         </div>
       </div>
       <h3 class="tool-subtitle">해외 자료</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/research/google_scholar.png" alt="Google Scholar" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/research/google_scholar.png') }}" alt="Google Scholar" class="tool-logo" />
           <h4 class="tool-name">Google Scholar</h4>
           <p class="tool-desc">전 세계 학술 논문, 특허, <br />서적 등 검색</p>
           <a href="https://scholar.google.com/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/research/pubmed.png" alt="PubMed" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/research/pubmed.png') }}" alt="PubMed" class="tool-logo" />
           <h4 class="tool-name">PubMed</h4>
           <p class="tool-desc">의학•생명과학 분야 연구자료</p>
           <a href="https://pubmed.ncbi.nlm.nih.gov/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/research/ScienceDirect.png" alt="Science Direct" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/research/ScienceDirect.png') }}" alt="Science Direct" class="tool-logo" />
           <h4 class="tool-name">Science Direct</h4>
           <p class="tool-desc">과학, 기술, 의학 분야의<br>해외 학술 자료 제공</p>
           <a href="https://www.sciencedirect.com/" class="tool-button">바로가기</a>
         </div>
          <div class="tool-card">
-          <img src="/static/tool_icons/research/Scopus.png" alt="Scopus" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/research/Scopus.png') }}" alt="Scopus" class="tool-logo" />
           <h4 class="tool-name">Scopus</h4>
           <p class="tool-desc">해외 논문, 학술지,<br>인용 정보까지 종합적으로 제공</p>
           <a href="https://www.scopus.com/" class="tool-button">바로가기</a>
@@ -118,13 +118,13 @@
       <h3 class="tool-subtitle">국내 자료</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/research/kosis.png" alt="KOSIS" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/research/kosis.png') }}" alt="KOSIS" class="tool-logo" />
           <h4 class="tool-name">KOSIS</h4>
           <p class="tool-desc">국가통계포털, 다양한 분야 통계</p>
           <a href="https://kosis.kr/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/research/statistics_korea.png" alt="통계청" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/research/statistics_korea.png') }}" alt="통계청" class="tool-logo" />
           <h4 class="tool-name">통계청</h4>
           <p class="tool-desc">모든 국가승인통계 제공</p>
           <a href="https://kostat.go.kr/" class="tool-button">바로가기</a>
@@ -133,25 +133,25 @@
       <h3 class="tool-subtitle">해외 자료</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/research/world_bank.png" alt="World Bank" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/research/world_bank.png') }}" alt="World Bank" class="tool-logo" />
           <h4 class="tool-name">World Bank Data</h4>
           <p class="tool-desc">세계은행에서 제공하는<br />글로벌 통계</p>
           <a href="https://data.worldbank.org/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/research/oecd.png" alt="OECD" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/research/oecd.png') }}" alt="OECD" class="tool-logo" />
           <h4 class="tool-name">OECD.Stat</h4>
           <p class="tool-desc">경제협력개발기구의<br />주요 통계</p>
           <a href="https://stats.oecd.org/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/research/UNdata.png" alt="UNdata" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/research/UNdata.png') }}" alt="UNdata" class="tool-logo" />
           <h4 class="tool-name">UNdata</h4>
           <p class="tool-desc">유엔의 국제 통계<br> 데이터베이스</p>
           <a href="https://data.un.org/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/research/usdata.png" alt="US Census Bureau" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/research/usdata.png') }}" alt="US Census Bureau" class="tool-logo" />
           <h4 class="tool-name">US Census Bureau</h4>
           <p class="tool-desc">미국의 인구·경제·사회통계<br> 자료를 제공</p>
           <a href="https://www.census.gov/" class="tool-button">바로가기</a>
@@ -166,37 +166,37 @@
       <h3 class="tool-subtitle">디자인 플랫폼</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/ppt/canva.png" alt="Canva" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/ppt/canva.png') }}" alt="Canva" class="tool-logo" />
           <h4 class="tool-name">Canva</h4>
           <p class="tool-desc">다양한 PPT 템플릿, 이미지,<br />아이콘을 쉽게 활용 가능</p>
           <a href="https://www.canva.com" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/ppt/miri.png" alt="미리캔버스" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/ppt/miri.png') }}" alt="미리캔버스" class="tool-logo" />
           <h4 class="tool-name">미리캔버스</h4>
           <p class="tool-desc">한국어 기반 PPT 디자인 도구</p>
           <a href="https://www.miricanvas.com/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card service-ready">
-          <img src="/static/project_png/preparing.svg" alt="서비스 준비중" class="preparing-img" />
+          <img src="{{ url_for('static', filename='project_png/preparing.svg') }}" alt="서비스 준비중" class="preparing-img" />
         </div>
       </div>
       <h3 class="tool-subtitle">템플릿 전문</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/ppt/slidesgo.png" alt="Slidesgo" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/ppt/slidesgo.png') }}" alt="Slidesgo" class="tool-logo" />
           <h4 class="tool-name">Slidesgo</h4>
           <p class="tool-desc">다양한 무료 프레젠테이션 템플릿 제공</p>
           <a href="https://slidesgo.com/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/ppt/slidescarnival.png" alt="SlidesCarnival" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/ppt/slidescarnival.png') }}" alt="SlidesCarnival" class="tool-logo" />
           <h4 class="tool-name">SlidesCarnival</h4>
           <p class="tool-desc">무료 프레젠테이션 디자인 템플릿</p>
           <a href="https://www.slidescarnival.com/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card service-ready">
-          <img src="/static/project_png/preparing.svg" alt="서비스 준비중" class="preparing-img" />
+          <img src="{{ url_for('static', filename='project_png/preparing.svg') }}" alt="서비스 준비중" class="preparing-img" />
         </div>
       </div>
     </div>
@@ -209,37 +209,37 @@
       <h3 class="tool-subtitle">영상 편집 플랫폼</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/video/capcut.png" alt="CapCut" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/video/capcut.png') }}" alt="CapCut" class="tool-logo" />
           <h4 class="tool-name">CapCut</h4>
           <p class="tool-desc">간편한 온라인 영상 편집 도구</p>
           <a href="https://www.capcut.com/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/video/adobe_premiere_pro.png" alt="Adobe Premiere Pro" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/video/adobe_premiere_pro.png') }}" alt="Adobe Premiere Pro" class="tool-logo" />
           <h4 class="tool-name">Adobe Premiere Pro</h4>
           <p class="tool-desc">전문 영상 편집 프로그램</p>
           <a href="https://www.adobe.com/kr/products/premiere.html" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card service-ready">
-          <img src="/static/project_png/preparing.svg" alt="서비스 준비중" class="preparing-img" />
+          <img src="{{ url_for('static', filename='project_png/preparing.svg') }}" alt="서비스 준비중" class="preparing-img" />
         </div>
       </div>
       <h3 class="tool-subtitle">내레이션용 플랫폼</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/video/lovo.ai.png" alt="LOVO.ai" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/video/lovo.ai.png') }}" alt="LOVO.ai" class="tool-logo" />
           <h4 class="tool-name">LOVO.ai</h4>
           <p class="tool-desc">AI 기반 음성 합성 및 내레이션 생성 플랫폼</p>
           <a href="https://lovo.ai/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/video/play.ht.png" alt="Play.ht" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/video/play.ht.png') }}" alt="Play.ht" class="tool-logo" />
           <h4 class="tool-name">Play.ht</h4>
           <p class="tool-desc">AI 음성 변환 및 내레이션 제작 서비스</p>
           <a href="https://play.ht/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card service-ready">
-          <img src="/static/project_png/preparing.svg" alt="서비스 준비중" class="preparing-img" />
+          <img src="{{ url_for('static', filename='project_png/preparing.svg') }}" alt="서비스 준비중" class="preparing-img" />
         </div>
       </div>
     </div>
@@ -252,13 +252,13 @@
       <h3 class="tool-subtitle">공동 문서 작업</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/report/microsoft_word_online.png" alt="Microsoft Word" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/report/microsoft_word_online.png') }}" alt="Microsoft Word" class="tool-logo" />
           <h4 class="tool-name">Microsoft Word Online</h4>
           <p class="tool-desc">온라인에서 공동 문서 작성</p>
           <a href="https://office.com/launch/word" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/report/google_docs.png" alt="Google Docs" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/report/google_docs.png') }}" alt="Google Docs" class="tool-logo" />
           <h4 class="tool-name">Google Docs</h4>
           <p class="tool-desc">실시간 협업이 가능한 구글 문서 도구</p>
           <a href="https://docs.google.com/" class="tool-button">바로가기</a>
@@ -267,13 +267,13 @@
       <h3 class="tool-subtitle">맞춤법/글자 수 세기</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/report/ko.png" alt="바른 한글" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/report/ko.png') }}" alt="바른 한글" class="tool-logo" />
           <h4 class="tool-name">바른 한글</h4>
           <p class="tool-desc">한글 맞춤법 및 문법 검사 서비스</p>
           <a href="https://www.barunhangeul.com/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/report/korean.png" alt="국립국어원 온라인 맞춤법 검사기" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/report/korean.png') }}" alt="국립국어원 온라인 맞춤법 검사기" class="tool-logo" />
           <h4 class="tool-name">국립국어원 온라인 맞춤법 검사기</h4>
           <p class="tool-desc">국립국어원 제공 공식 맞춤법 검사기</p>
           <a href="https://speller.cs.pusan.ac.kr/" class="tool-button">바로가기</a>
@@ -282,13 +282,13 @@
       <h3 class="tool-subtitle">참고 문헌 관리</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/report/refworks.png" alt="RefWorks" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/report/refworks.png') }}" alt="RefWorks" class="tool-logo" />
           <h4 class="tool-name">RefWorks</h4>
           <p class="tool-desc">참고문헌 및 인용 관리 플랫폼</p>
           <a href="https://refworks.proquest.com/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/report/zotero.png" alt="Zotero" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/report/zotero.png') }}" alt="Zotero" class="tool-logo" />
           <h4 class="tool-name">Zotero</h4>
           <p class="tool-desc">무료 오픈소스 참고문헌 관리 도구</p>
           <a href="https://www.zotero.org/" class="tool-button">바로가기</a>
@@ -297,13 +297,13 @@
       <h3 class="tool-subtitle">표절율 검사</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/report/copykiller.png" alt="CopyKiller" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/report/copykiller.png') }}" alt="CopyKiller" class="tool-logo" />
           <h4 class="tool-name">CopyKiller</h4>
           <p class="tool-desc">국내 표절 검사 및 유사도 분석 서비스</p>
           <a href="https://www.copykiller.com/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/report/turnitin.png" alt="Turnitin" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/report/turnitin.png') }}" alt="Turnitin" class="tool-logo" />
           <h4 class="tool-name">Turnitin</h4>
           <p class="tool-desc">글로벌 표절 검사 및</p>
           <a href="https://www.turnitin.com/" class="tool-button">바로가기</a>
@@ -319,13 +319,13 @@
       <h3 class="tool-subtitle">데이터 입력 및 기본 통계 분석 도구</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/stat/google_sheets.png" alt="Google Sheets" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/stat/google_sheets.png') }}" alt="Google Sheets" class="tool-logo" />
           <h4 class="tool-name">Google Sheets</h4>
           <p class="tool-desc">데이터 입력 및 분석이 가능한 구글 스프레드시트</p>
           <a href="https://sheets.google.com/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/stat/zoho_sheet.png" alt="Zoho Sheet" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/stat/zoho_sheet.png') }}" alt="Zoho Sheet" class="tool-logo" />
           <h4 class="tool-name">Zoho Sheet</h4>
           <p class="tool-desc">실시간 협업 지원 온라인 스프레드시트</p>
           <a href="https://www.zoho.com/sheet/" class="tool-button">바로가기</a>
@@ -334,13 +334,13 @@
       <h3 class="tool-subtitle">디자인 중심 그래프 제작 도구</h3>
       <div class="tool-grid">
         <div class="tool-card">
-          <img src="/static/tool_icons/stat/visme.png" alt="Visme" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/stat/visme.png') }}" alt="Visme" class="tool-logo" />
           <h4 class="tool-name">Visme</h4>
           <p class="tool-desc">프레젠테이션 및 인포그래픽 제작 도구</p>
           <a href="https://www.visme.co/" class="tool-button">바로가기</a>
         </div>
         <div class="tool-card">
-          <img src="/static/tool_icons/stat/piktochart.png" alt="Piktochart" class="tool-logo" />
+          <img src="{{ url_for('static', filename='tool_icons/stat/piktochart.png') }}" alt="Piktochart" class="tool-logo" />
           <h4 class="tool-name">Piktochart</h4>
           <p class="tool-desc">쉽고 빠른 인포그래픽, 차트 제작 플랫폼</p>
           <a href="https://piktochart.com/" class="tool-button">바로가기</a>
@@ -352,8 +352,8 @@
   <!-- 동적 푸터 연결 -->
   <div id="footer-placeholder"></div>
   <!-- 스크립트 -->
-  <script src="/static/header_footer.js" defer></script>
-  <script src="/static/main.js" defer></script>
-  <script src="/static/index.js" defer></script>
+  <script src="{{ url_for('static', filename='header_footer.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='main.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='index.js') }}" defer></script>
 </body>
 </html>

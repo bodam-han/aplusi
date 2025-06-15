@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>에이쁠아이►공지사항</title>
-  <link rel="icon" href="/static/index_png/aiplus_logo_header.png" type="image/png" />
+  <link rel="icon" href="{{ url_for('static', filename='index_png/aiplus_logo_header.png') }}" type="image/png">
   <!-- CSS 파일을 링크 -->
-  <link rel="stylesheet" href="/static/index.css" />
-  <link rel="stylesheet" href="/static/header_footer.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='header_footer.css') }}">
   <!-- CSS 파일을 링크 -->
-  <link rel="stylesheet" href="/static/notice_detail.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='notice_detail.css') }}">
   <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -63,8 +63,8 @@
 
 <div id="footer-placeholder"></div>
 <!-- JavaScript 파일 링크 -->
-<script src="/static/header_footer.js"></script>
-<script src="/static/notice.js"></script>
+<script src="{{ url_for('static', filename='header_footer.js') }}"></script>
+<script src="{{ url_for('static', filename='notice.js') }}"></script>
 <script>
   function goBack() {
     window.location.href = '/notice.html';
