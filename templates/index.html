@@ -32,7 +32,7 @@
         <img class="search-img" src="{{ url_for('static', filename='index_png/study.png') }}" width="30%">
 
         <h2 class="search-text">AI 시대 똑똑하게 과제하자</h2>
-        <a href="/aisearch" class="search-icon" id="search-button" aria-label="Search">
+        <a href="{{ url_for('aisearch') }}" class="search-icon" id="search-button" aria-label="Search">
           지금 내가 필요한 ai는? ▶︎
         </a>
       </div>
